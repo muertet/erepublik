@@ -1,0 +1,1793 @@
+<script type="text/javascript">
+	var SERVER_DATA = new Array();
+</script>
+<div class="column">
+				
+		<script type="text/javascript">
+		var temp = {
+			culture            : 'en',
+			csrfToken          : 'd05904f6675e1e2fd3126e078d387a01',
+			groupId			   : 562,
+			url				   : '/en/main/group-show/562',
+			text_for_new_recruit_order: "New recruit order has been set.",
+			text_for_daily_order_to_all_regiments: "The order has been proposed to all regiments.",
+			the_daily_order_has_been_set: "The daily order has been set",
+			new_battle_priorities_set_text : "New priorities have been set."
+			};
+			$j.extend(SERVER_DATA, temp);
+	</script>		
+		
+		<div id="orderContainer" class="boxes order_of_day">
+		<h1>Daily order</h1>
+		<div>
+						<strong>Fight for Spain in Centro</strong>
+							<a class="blue_beauty" href="/en/military/battlefield/33819"><q>Battlefield</q></a>
+					</div>
+	</div>
+	<div id="recruitOrderContainer" class="boxes recruit_orders">
+	<h1>Recruit's orders</h1>
+	<p>Complete these orders to become a member of the military unit</p>
+	<div>
+					<ul>
+			<li>
+				<img alt="" src="http://www.erepublik.com/images/modules/ranks/30/private_0.png">
+				<strong>
+					Get to Private military rank					</strong>
+				<span>
+                                    											<img alt="" src="http://www.erepublik.com/images/modules/_icons/ok_2.png">
+														</span>
+			</li>
+			<li>
+				<img alt="" src="http://www.erepublik.com/images/modules/homepage/defeat.png">
+				<strong>
+				Defeat enemies in any Campaign					</strong>
+				<big>0/10</big>
+			</li>
+		</ul>
+		<a class="blue_beauty" href="/en/military/campaigns"><q>Go to Campaigns</q></a>
+		<a class="green_beauty " href="#"><q>Become a member</q></a>
+	</div>
+</div>
+		<div class="wresults grass daily" id="mission_reward">
+	<div class="wtop"></div>
+	<div class="wrepeat">
+		<div class="wcontent">
+			<div class="wheader">
+				<h3>Daily Order completed</h3>
+				<div class="wdetails salary">
+					<div class="wdetails_top"></div>
+					<div class="wdetails_repeat">
+						<div class="wdetails_content">
+							<img src="/images/modules/_icons/big_energy.png" class="good" alt="">
+							<img style="display: block;" src="/images/modules/_icons/bazooka_parts.png" class="cash result_salary" alt="">
+							<div class="wtexts">
+								<div class="item result_salary" id="result_salary">
+									<strong>+5</strong>
+									<small>Different Bazooka parts</small>
+								</div>
+								<div class="item" id="result_products">
+									<strong>+1</strong>
+									<small>Energy Bar</small>
+								</div>
+								<img style="top:-15px;right:-85px;" src="/images/modules/homepage/daily_order.png" class="building" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="wdetails_bottom"></div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<table width="100%" class="aligner">
+				<tbody><tr>
+					<td>
+						<a href="" class="green_action expand" title="Get reward">Get reward<span></span></a>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+	<div class="wbottom"></div>
+</div>
+		<h1 style="float:left" class="noborder">Military campaigns</h1>
+
+<div id="battle_listing">
+    	
+<div class="wresults grass daily rw" id="rw_pop">
+	<div class="wtop"></div>
+	<div class="wrepeat">
+		<div class="wcontent">
+			<div class="wheader">
+				<h3>Support resistance war?</h3>
+				<p>Support the start of the resistance war with 1000 currency?</p>
+				<div class="wdetails salary">
+					<div class="wdetails_top"></div>
+					<div class="wdetails_repeat">
+						<div class="wdetails_content">
+							<div class="wtexts">
+								<img alt="" class="rh_icon" src="/images/modules/homepage/rh_icon.png">
+								<div class="item">
+									<small>If the resistance war is successful, you'll receive a Resistance Hero medal.</small>
+								</div>
+								<div class="item">
+									<small>You can only support one resistance war at a time</small>
+								</div>
+								<div class="item">
+									<small>If the resistance war is unsuccessful you will be able to support another one in <b>7 days</b>.</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="wdetails_bottom"></div>
+				</div>
+			</div>
+			<table width="100%" class="aligner">
+				<tbody><tr>
+					<td>
+						<a href="javascript:;" class="green_action spaceit" id="fundRW_btn2" title="Support this war">Support<span></span></a>
+						<a href="javascript:;" id="close_rw" class="green_action go_red close_pop_up" title="Cancel ">Cancel<span></span></a>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+	<div class="wbottom"></div>
+</div>
+	<h4>Campaign of the Day</h4><ul class="bod_listing"><li id="battle-33842"><img title="Spain" alt="Spain" src="/images/flags_png/M/Spain.png" class="side_flags"><small>vs</small><img alt="Colombia" title="Colombia" src="/images/flags_png/M/Colombia.png" class="side_flags"><strong>Orinoquia</strong><a class="fight_button" title="" href="/en/military/battlefield/33842"><span>Fight</span></a></li></ul>    
+    <div style="clear:both;"></div>
+    
+    
+    	<div class="rest">
+		<a title="" href="/en/military/campaigns">Military campaigns</a>
+		<a title="" href="/en/main/news/military">Latest events</a>
+	</div>
+    </div>
+
+<script type="text/javascript">
+
+
+    			$j('.holder_campaigns.allies').hide();
+			$j('.campaigns_header.allies').addClass("toggled");
+			$j('.campaigns_header.allbattles').removeClass("toggled");
+     
+    			$j('.holder_campaings.allbattles').hide();
+			$j('.campaigns_header.allbattles').addClass("toggled");
+			$j('.campaigns_header.allies').removeClass("toggled");
+    
+			$j('.holder_campaigns.allies').hide();
+		$j('.campaigns_header.allies').addClass("toggled");
+		$j('.holder_campaigns.allbattles').hide();
+		$j('.campaigns_header.allbattles').addClass("toggled");
+	
+</script>
+		<script src="/js/jquery.bigtarget.js" type="text/javascript"></script>
+<script src="/js/homepage/articles.1337264590.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var ARTICLES = {
+		culture: 'en'
+	}
+</script>
+
+<h1 style="clear:left" class="noborder">Top news</h1>
+<div class="media_widget">
+	<input type="hidden" id="second_tab" value="0">
+	<input type="hidden" id="perma" value="Spain">
+	<input type="hidden" id="perma_main" value="Spain">
+		<div class="mini_news_categories">
+		<span style="width:75px;">Categories</span>
+		<ul>
+			<li>
+				
+				<a title="All categories" class="switchers active" rel="all" href="javascript:;">
+					<img title="All categories" alt="All categories" src="/images/modules/news/icons/top_rated.png">
+				</a>
+			</li>
+						<li>
+				<a title="First steps in eRepublik" class="switchers" rel="first-steps-in-erepublik" href="javascript:;">
+					<img title="First steps in eRepublik" alt="First steps in eRepublik" src="/images/modules/news/icons/cat_1.png">
+				</a>
+			</li>
+						<li>
+				<a title="Battle orders" class="switchers" rel="battle-orders" href="javascript:;">
+					<img title="Battle orders" alt="Battle orders" src="/images/modules/news/icons/cat_2.png">
+				</a>
+			</li>
+						<li>
+				<a title="Warfare analysis" class="switchers" rel="warfare-analysis" href="javascript:;">
+					<img title="Warfare analysis" alt="Warfare analysis" src="/images/modules/news/icons/cat_3.png">
+				</a>
+			</li>
+						<li>
+				<a title="Political debates and analysis" class="switchers" rel="political-debates-and-analysis" href="javascript:;">
+					<img title="Political debates and analysis" alt="Political debates and analysis" src="/images/modules/news/icons/cat_4.png">
+				</a>
+			</li>
+						<li>
+				<a title="Financial business" class="switchers" rel="financial-business" href="javascript:;">
+					<img title="Financial business" alt="Financial business" src="/images/modules/news/icons/cat_5.png">
+				</a>
+			</li>
+						<li>
+				<a title="Social interactions and entertainment" class="switchers" rel="social-interactions-and-entertainment" href="javascript:;">
+					<img title="Social interactions and entertainment" alt="Social interactions and entertainment" src="/images/modules/news/icons/cat_6.png">
+				</a>
+			</li>
+						<li>
+				<a title="Newspaper subscriptions" class="switchers" rel="subscriptions" href="javascript:;">
+					<img title="Newspaper subscriptions" alt="Newspaper subscriptions" src="/images/modules/news/icons/cat_7.png">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<ul style="display:none;" id="taker">
+		<li class="no_articles">
+			<h4>No articles for <br> the moment</h4>
+			<img alt="" src="/images/modules/homepage/sad_face.png">
+			<a title="Write article" href="/en/create-newspaper">Write an article</a>
+		</li>
+	</ul>
+	<div class="news_mask">
+		<div class="news_holder">
+		<ul rel="15" id="citizenship_news">
+						<li>
+				<div class="no_votes">
+					<strong>423</strong>
+					<small>votes</small>
+				</div>
+				<div class="article_entry">
+					<div>
+						<a title="[SPQR] TEDEN vs CTRL y El Ultimátum de INCI al Gobierno …" href="/en/article/-spqr-teden-vs-ctrl-y-el-ultim-aacute-tum-de-inci-al-gobierno-de-usa-d-iacute-a-1767--2124739/1/20">[SPQR] TEDEN vs CTRL y El Ultimátum de INCI al Gobierno …</a>
+						<span>
+							<em class="author">Xeroccona</em>
+							<span>•</span>
+							<em class="comments_posted">79</em>
+							<span>•</span>
+							<em class="time_posted">2 days ago</em>
+						</span>
+					</div>
+				</div>
+			</li>
+						<li>
+				<div class="no_votes">
+					<strong>172</strong>
+					<small>votes</small>
+				</div>
+				<div class="article_entry">
+					<div>
+						<a title="Vuelta al Trabajo | BO 15" href="/en/article/vuelta-al-trabajo-bo-15-2125095/1/20">Vuelta al Trabajo | BO 15</a>
+						<span>
+							<em class="author">PatxiOca</em>
+							<span>•</span>
+							<em class="comments_posted">39</em>
+							<span>•</span>
+							<em class="time_posted">23 hours ago</em>
+						</span>
+					</div>
+				</div>
+			</li>
+						<li>
+				<div class="no_votes">
+					<strong>162</strong>
+					<small>votes</small>
+				</div>
+				<div class="article_entry">
+					<div>
+						<a title="LA UNIÓN DE LA eIZQUIERDA: IZQUIERDA FEDERAL" href="/en/article/la-uni-oacute-n-de-la-eizquierda-izquierda-federal-2125105/1/20">LA UNIÓN DE LA eIZQUIERDA: IZQUIERDA FEDERAL</a>
+						<span>
+							<em class="author">Vihesito</em>
+							<span>•</span>
+							<em class="comments_posted">35</em>
+							<span>•</span>
+							<em class="time_posted">23 hours ago</em>
+						</span>
+					</div>
+				</div>
+			</li>
+						<li>
+				<div class="no_votes">
+					<strong>141</strong>
+					<small>votes</small>
+				</div>
+				<div class="article_entry">
+					<div>
+						<a title="[SPC] | Pegada R10 y R11 Venezuelan Andean  " href="/en/article/-spc-pegada-r10-y-r11-venezuelan-andean--2125340/1/20">[SPC] | Pegada R10 y R11 Venezuelan Andean  </a>
+						<span>
+							<em class="author">MonosParanoicos</em>
+							<span>•</span>
+							<em class="comments_posted">31</em>
+							<span>•</span>
+							<em class="time_posted">16 hours ago</em>
+						</span>
+					</div>
+				</div>
+			</li>
+						<li>
+				<div class="no_votes">
+					<strong>138</strong>
+					<small>votes</small>
+				</div>
+				<div class="article_entry">
+					<div>
+						<a title="Nuevos cambios: Bye bye Town Center - Actualizado con recompensas" href="/en/article/nuevos-cambios-bye-bye-town-center-actualizado-con-recompensas-2124514/1/20">Nuevos cambios: Bye bye Town Center - Actualizado con recompensas</a>
+						<span>
+							<em class="author">BuIIofWar</em>
+							<span>•</span>
+							<em class="comments_posted">74</em>
+							<span>•</span>
+							<em class="time_posted">2 days ago</em>
+						</span>
+					</div>
+				</div>
+			</li>
+					</ul>
+				</div>
+	</div>
+	<a title="more news" class="more_news" href="/en/main/news/rated/all/Spain/1">more news</a>
+	<div class="bottom"></div>
+</div>
+	
+
+</div>
+<div style="width:394px;padding-right:15px;" class="column">
+
+		<script type="text/javascript">
+		$j(document).ready(function() {
+			$j('.mass_banner span').tipsy({
+				gravity: 'w',
+				live: true
+			});
+		});
+	</script>
+
+	
+	<div class="clear"></div>
+			<div id="wall_master">
+			<script>
+	$j(document).ready(function() {if(axs.hc()) { $j('#shout').css('width', '289px');}});
+        var culture = "en";
+        var wall_texts = {
+            'say_something_to_your_party_colleagues':'Say something to your party colleagues',
+            'say_something_to_your_friends' : 'Say something to your friends',
+            'are_you_sure_you_want_to_delete_this_comment' : 'Are you sure you want to delete this comment?',
+            'are_you_sure_you_want_to_remove_this_post' : 'Are you sure you want to remove this post?'
+        };
+</script>
+<input type="hidden" value="You&lt;/b&gt; voted this." id="you_voted_this">
+<input type="hidden" value="You and &lt;/b&gt;" id="you_and">
+<input type="hidden" value="You, &lt;/b&gt;" id="you">
+<input type="hidden" value="characters left" id="characters_left">
+	   
+       
+<h1 class="feed_title">My feeds</h1>
+	<div style="display: none" id="citizen_feed_friends">
+		<div id="top_zone">
+			<div class="start_message">
+				<img alt="" src="/images/modules/homepage/friends.jpg">
+				<div class="start_content">
+				<h3>Hi {$myNick}</h3>
+				<p>Share what's on your mind in your citizen feed <br>and stay in touch with your in-game friends. More friends are waiting for you.</p>		<div class="import_options">
+						<small>Import from</small>
+						<div class="import_box">
+							<a title="Import from Gmail" onclick="inviteBy('gmail')" class="go_gmail" href="javascript:;">&nbsp;</a>
+							<a title="Import from Yahoo Mail" onclick="inviteBy('yahoo')" class="go_yahoo" href="javascript:;">&nbsp;</a>
+							<a title="Import from Hotmail" onclick="inviteBy('msn')" class="go_hotmail" href="javascript:;">&nbsp;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="duo" id="citizen_feed">
+	<ul>
+							<li class="active" id="show_regiment_feed"><a title="Batallon ACB" trigger="get_group_feeds" href="javascript:;">Batallon ACB</a></li>
+			<li class="" id="show_friends_feed"><a trigger="get_citizen_feeds" href="javascript:;">Friends</a></li>
+						<li id="show_facebook_feed">
+			<a trigger="get_facebook_feeds" href="javascript:;">
+				<img alt="" trigger="get_facebook_feeds" src="/images/parts/facebook_small_icon.png">
+			</a>
+		</li>
+	</ul>
+		<div class="inner">
+	<div class="shouter">
+		<form id="wall_post" method="post" action="">
+			<img width="45" height="45" class="own_pic" alt="{$myNick}" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91_55x55.jpg">
+			<textarea name="post_message" title="Say something" class="expand" maxlength="160" id="shout" trigger="post" style="height: 19px; overflow: hidden;">Say something…</textarea>
+			<input type="hidden" value="d05904f6675e1e2fd3126e078d387a01" id="_token" name="_token">
+			<span class="controls">
+				<a trigger="new_post" class="post_button" title="Post to wall" href="javascript:;">
+					<b trigger="new_post">Post</b>
+					<img alt="" src="/images/modules/homepage/post_loader2.gif" trigger="new_post">
+				</a>
+									<input type="hidden" value="0" id="post_as">
+								<small id="chars_remaining">464 characters left</small>
+			</span>
+			<div class="clear"></div>
+		</form>
+	</div>
+		<p style="display: none;" class="wall_error"></p>
+	<div class="wall_post_list">
+		<iframe scrolling="no" frameborder="0" class="fb-like-box" allowtransparency="true" style="border:none; overflow:hidden; width:395px; height:692px;display:none;" src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FeRepublik&amp;width=395&amp;height=692&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23FFF&amp;stream=true&amp;header=false" fb-xfbml-state="rendered"></iframe>
+		<ul>
+			
+	<li id="post_2261566" class="wall_post">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6539397"><span></span><img alt="" src="/images/default_avatars/Citizens/default_male_55x55.gif"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2261566/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6539397">IPeid</a>
+											<em>wrote 49 minutes ago</em>
+					
+					</h6>
+					<p>
+													Cuanto se tarda en volver a poder a comer?											</p>
+					<div class="post_actions no_comments no_votes">
+						<a trigger="show" title="" id="post_stats_2261566" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2261566">0</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2261566">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2261566">
+							<input type="hidden" value="1" id="no_likes_post_2261566">
+							<span id="post_like_text_2261566">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2261566"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2261566" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2261566">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2256254" class="wall_post">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/3130969"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+																<a class="remove_post" trigger="remove_post" title="Remove post" href="javascript:;">x</a>
+										</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/3130969">{$myNick}</a>
+											<em>wrote yesterday</em>
+					
+					</h6>
+					<p>
+													56.000 de daño y de nuevo manejo me supera con 90.000 imposible tener BH											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2256254" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2256254">8</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2256254">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2256254">
+							<input type="hidden" value="1" id="no_likes_post_2256254">
+							<span id="post_like_text_2256254">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="">Previous comments</a>
+							</div>
+							<ul id="comments_container_2256254"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2256254" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2256254">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2255653" class="wall_post">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6517005"><span></span><img alt="" src="/images/default_avatars/Citizens/default_male_55x55.gif"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2255653/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6517005">Morlerek</a>
+											<em>wrote yesterday</em>
+					
+					</h6>
+					<p>
+													como se acen las rebeliones y todo eso???<br>
+											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2255653" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2255653">1</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2255653">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2255653">
+							<input type="hidden" value="1" id="no_likes_post_2255653">
+							<span id="post_like_text_2255653">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2255653"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2255653" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2255653">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2254366" class="wall_post">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6412230"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/08/19/d704957159e6f4f6faa7bc24aa6a9e53_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2254366/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6412230">guiapados</a>
+											<em>wrote 2 days ago</em>
+					
+					</h6>
+					<p>
+													vamos! 3 logro de un verdadero patriota xD											</p>
+					<div class="post_actions no_comments no_votes">
+						<a trigger="show" title="" id="post_stats_2254366" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2254366">0</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2254366">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2254366">
+							<input type="hidden" value="1" id="no_likes_post_2254366">
+							<span id="post_like_text_2254366">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2254366"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2254366" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2254366">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2251995" class="wall_post">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6327243"><span></span><img alt="" src="/images/default_avatars/Citizens/default_male_55x55.gif"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2251995/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6327243">alfonso19</a>
+											<em>wrote 2 days ago</em>
+					
+					</h6>
+					<p>
+													Cada cuanto salen nuevas misiones??											</p>
+					<div class="post_actions no_comments no_votes">
+						<a trigger="show" title="" id="post_stats_2251995" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2251995">0</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2251995">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2251995">
+							<input type="hidden" value="1" id="no_likes_post_2251995">
+							<span id="post_like_text_2251995">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2251995"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2251995" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2251995">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2250386" class="wall_post">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6416266"><span></span><img alt="" src="/images/default_avatars/Citizens/default_male_55x55.gif"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2250386/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6416266">Lochelag</a>
+											<em>wrote 3 days ago</em>
+					
+					</h6>
+					<p>
+													wenas, Hay algún truco con los bazokas?											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2250386" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2250386">1</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2250386">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2250386">
+							<input type="hidden" value="1" id="no_likes_post_2250386">
+							<span id="post_like_text_2250386">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2250386"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2250386" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2250386">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2248042" class="wall_post">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6522134"><span></span><img alt="" src="/images/default_avatars/Citizens/default_male_55x55.gif"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2248042/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6522134">illoque</a>
+											<em>wrote 3 days ago</em>
+					
+					</h6>
+					<p>
+													como se ensambla el bazooka si tengo las cinco partes????											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2248042" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2248042">6</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2248042">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2248042">
+							<input type="hidden" value="1" id="no_likes_post_2248042">
+							<span id="post_like_text_2248042">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="">Previous comments</a>
+							</div>
+							<ul id="comments_container_2248042"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2248042" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2248042">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2240021" class="wall_post">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6336668"><span></span><img alt="" src="/images/default_avatars/Citizens/default_male_55x55.gif"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2240021/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6336668">sersalmon</a>
+											<em>wrote 5 days ago</em>
+					
+					</h6>
+					<p>
+													ya volvi a españa jajjaja chuches q7 pls											</p>
+					<div class="post_actions no_comments no_votes">
+						<a trigger="show" title="" id="post_stats_2240021" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2240021">0</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2240021">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2240021">
+							<input type="hidden" value="1" id="no_likes_post_2240021">
+							<span id="post_like_text_2240021">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2240021"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2240021" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2240021">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2238358" class="wall_post">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6351596"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/08/04/e0f0c58f11e3a589bba156d22e44ef99_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2238358/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6351596">danielito8</a>
+											<em>wrote 5 days ago</em>
+					
+					</h6>
+					<p>
+													The Battle hero achievement was awarded for dealing the highest influence in the battle of Lisboa for Spain against Portugal.											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2238358" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2238358">2</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2238358">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2238358">
+							<input type="hidden" value="1" id="no_likes_post_2238358">
+							<span id="post_like_text_2238358">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2238358"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2238358" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2238358">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2234365" class="wall_post">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6520616"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/09/17/b79a45dbd008b91d5196c9ca0b8d9673_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2234365/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6520616">Rishuke</a>
+											<em>wrote 6 days ago</em>
+					
+					</h6>
+					<p>
+													¿No deberíamos ser el Batallón Liga Endesa? jajaja											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2234365" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2234365">2</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2234365">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2234365">
+							<input type="hidden" value="1" id="no_likes_post_2234365">
+							<span id="post_like_text_2234365">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2234365"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2234365" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2234365">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2232973" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6412230"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/08/19/d704957159e6f4f6faa7bc24aa6a9e53_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2232973/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6412230">guiapados</a>
+											<em>wrote 6 days ago</em>
+					
+					</h6>
+					<p>
+													si alguien le interesa tengo a la venta una empresa de alimentos lv1 a 9 gold en el mercado de empresas a la venta											</p>
+					<div class="post_actions no_comments no_votes">
+						<a trigger="show" title="" id="post_stats_2232973" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2232973">0</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2232973">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2232973">
+							<input type="hidden" value="1" id="no_likes_post_2232973">
+							<span id="post_like_text_2232973">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2232973"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2232973" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2232973">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2229751" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/3130969"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+																<a class="remove_post" trigger="remove_post" title="Remove post" href="javascript:;">x</a>
+										</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/3130969">{$myNick}</a>
+											<em>wrote 7 days ago</em>
+					
+					</h6>
+					<p>
+													caguen no encuentro la pass para sincronizar con el pulse											</p>
+					<div class="post_actions no_comments no_votes">
+						<a trigger="show" title="" id="post_stats_2229751" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2229751">0</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2229751">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2229751">
+							<input type="hidden" value="1" id="no_likes_post_2229751">
+							<span id="post_like_text_2229751">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2229751"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2229751" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2229751">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2229475" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/1504768"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2009/05/26/de501cd27e2e08e8d40a6b3b4d20009f_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2229475/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/1504768">Vaus</a>
+											<em>wrote 7 days ago</em>
+					
+					</h6>
+					<p>
+													<a target="_blank" href="http://www.erepublik.com/es/main/warn/aHR0cDovL3BhcnRpZG9hY2IuZm9yb2VzcGFuYS5jb20vdDc0OS1wZXRpY2lvbi1kZS1tZWR1c2EtNjI=">http://partidoacb.foroespana.com/t749-peticion-de-medusa-62</a>											</p>
+					<div class="post_actions no_comments no_votes">
+						<a trigger="show" title="" id="post_stats_2229475" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2229475">0</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2229475">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2229475">
+							<input type="hidden" value="1" id="no_likes_post_2229475">
+							<span id="post_like_text_2229475">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2229475"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2229475" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2229475">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2227268" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6517659"><span></span><img alt="" src="/images/default_avatars/Citizens/default_male_55x55.gif"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2227268/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6517659">senadorkimby</a>
+											<em>wrote 7 days ago</em>
+					
+					</h6>
+					<p>
+													duda, porque hay gente española que lucha en la resistencia de portugal? :s											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2227268" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2227268">5</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2227268">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2227268">
+							<input type="hidden" value="1" id="no_likes_post_2227268">
+							<span id="post_like_text_2227268">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2227268"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2227268" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2227268">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2226901" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6351596"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/08/04/e0f0c58f11e3a589bba156d22e44ef99_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2226901/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6351596">danielito8</a>
+											<em>wrote 7 days ago</em>
+					
+					</h6>
+					<p>
+													no me deja consumir la barrita energética por que?											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2226901" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2226901">2</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2226901">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2226901">
+							<input type="hidden" value="1" id="no_likes_post_2226901">
+							<span id="post_like_text_2226901">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2226901"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2226901" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2226901">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2221923" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6476637"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/09/02/597b0b73d5be3141a57ff434f218ca5f_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2221923/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6476637">XABI2012</a>
+											<em>wrote 8 days ago</em>
+					
+					</h6>
+					<p>
+													con quien puedo ligar?											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2221923" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2221923">4</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2221923">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2221923">
+							<input type="hidden" value="1" id="no_likes_post_2221923">
+							<span id="post_like_text_2221923">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2221923"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2221923" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2221923">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2221885" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6355181"><span></span><img alt="" src="/images/default_avatars/Citizens/default_male_55x55.gif"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2221885/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6355181">Anthony Bonner</a>
+											<em>wrote 8 days ago</em>
+					
+					</h6>
+					<p>
+													¿Cuanto dan por la medalla de mercenario?, la empiezo a tener a tiro!											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2221885" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2221885">1</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2221885">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2221885">
+							<input type="hidden" value="1" id="no_likes_post_2221885">
+							<span id="post_like_text_2221885">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2221885"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2221885" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2221885">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2221091" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6272898"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/07/13/5c34b00912561f538f05346127eb858b_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2221091/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6272898">jesusrece</a>
+											<em>wrote 9 days ago</em>
+					
+					</h6>
+					<p>
+													el impuesto sobre las ganancias dondes es mas caro ¿en España o en Estados Unidos?<br>
+											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2221091" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2221091">1</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2221091">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2221091">
+							<input type="hidden" value="1" id="no_likes_post_2221091">
+							<span id="post_like_text_2221091">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2221091"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2221091" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2221091">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2218766" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6412230"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/08/19/d704957159e6f4f6faa7bc24aa6a9e53_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2218766/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6412230">guiapados</a>
+											<em>wrote 9 days ago</em>
+					
+					</h6>
+					<p>
+													los portugueses están muy creciditos											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2218766" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2218766">1</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2218766">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2218766">
+							<input type="hidden" value="1" id="no_likes_post_2218766">
+							<span id="post_like_text_2218766">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2218766"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2218766" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2218766">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2215246" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6272898"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/07/13/5c34b00912561f538f05346127eb858b_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2215246/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6272898">jesusrece</a>
+											<em>wrote 10 days ago</em>
+					
+					</h6>
+					<p>
+													Madre mia! ¡Que nos borran del mapa!											</p>
+					<div class="post_actions no_comments no_votes">
+						<a trigger="show" title="" id="post_stats_2215246" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2215246">0</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2215246">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2215246">
+							<input type="hidden" value="1" id="no_likes_post_2215246">
+							<span id="post_like_text_2215246">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2215246"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2215246" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2215246">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2206347" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/1591869"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2009/06/29/c27b5e530aec715b380df59bd269a429_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2206347/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/1591869">Gixeska</a>
+											<em>wrote 11 days ago</em>
+					
+					</h6>
+					<p>
+													si a alguien le interesa sacarse unos ESP diarios que me mande mensaje privado											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2206347" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2206347">3</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2206347">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2206347">
+							<input type="hidden" value="1" id="no_likes_post_2206347">
+							<span id="post_like_text_2206347">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2206347"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2206347" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2206347">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2205295" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6479371"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/09/03/4e00666f80891fcff60d042265703d58_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2205295/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6479371">Inmortal99</a>
+											<em>wrote 11 days ago</em>
+					
+					</h6>
+					<p>
+													Parece que chile ha sido borrada del mapa,solo le queda australia,nunca me lo imagine.											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2205295" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2205295">3</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2205295">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2205295">
+							<input type="hidden" value="1" id="no_likes_post_2205295">
+							<span id="post_like_text_2205295">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2205295"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2205295" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2205295">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2205108" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6075241"><span></span><img alt="" src="/images/default_avatars/Citizens/default_male_55x55.gif"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2205108/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6075241">ERFISIO</a>
+											<em>wrote 11 days ago</em>
+					
+					</h6>
+					<p>
+													se podria atacar aquitanie y quitarsela a EEUU y matamos dos pajaros de un tiro?											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2205108" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2205108">1</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2205108">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2205108">
+							<input type="hidden" value="1" id="no_likes_post_2205108">
+							<span id="post_like_text_2205108">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2205108"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2205108" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2205108">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2200504" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/3130969"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+																<a class="remove_post" trigger="remove_post" title="Remove post" href="javascript:;">x</a>
+										</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/3130969">{$myNick}</a>
+											<em>wrote 12 days ago</em>
+					
+					</h6>
+					<p>
+													bueh sólo he podido matar 7											</p>
+					<div class="post_actions no_comments no_votes">
+						<a trigger="show" title="" id="post_stats_2200504" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2200504">0</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2200504">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2200504">
+							<input type="hidden" value="1" id="no_likes_post_2200504">
+							<span id="post_like_text_2200504">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2200504"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2200504" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2200504">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2199014" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/1504768"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2009/05/26/de501cd27e2e08e8d40a6b3b4d20009f_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2199014/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/1504768">Vaus</a>
+											<em>wrote 13 days ago</em>
+					
+					</h6>
+					<p>
+													Atacamos Francia. Siempre es un placer patear culos gabachos....											</p>
+					<div class="post_actions no_comments no_votes">
+						<a trigger="show" title="" id="post_stats_2199014" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2199014">0</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2199014">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2199014">
+							<input type="hidden" value="1" id="no_likes_post_2199014">
+							<span id="post_like_text_2199014">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2199014"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2199014" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2199014">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2196136" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6472015"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/09/01/474bbacb9ee0ae4f1a9073b0b0951a23_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2196136/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6472015">magnus555</a>
+											<em>wrote 13 days ago</em>
+					
+					</h6>
+					<p>
+													Tengo un campo adicional de entrenamiento del que me quiero deshacer pero no me sale la opcion, solo "Añadir" y "Mejorar"..											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2196136" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2196136">2</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2196136">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2196136">
+							<input type="hidden" value="1" id="no_likes_post_2196136">
+							<span id="post_like_text_2196136">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2196136"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2196136" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2196136">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2194559" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6272898"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/07/13/5c34b00912561f538f05346127eb858b_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2194559/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6272898">jesusrece</a>
+											<em>wrote 14 days ago</em>
+					
+					</h6>
+					<p>
+													¿Para que valen las granjas agricolas y las minas de hierro?<br>
+											</p>
+					<div class="post_actions no_comments no_votes">
+						<a trigger="show" title="" id="post_stats_2194559" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2194559">0</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2194559">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2194559">
+							<input type="hidden" value="1" id="no_likes_post_2194559">
+							<span id="post_like_text_2194559">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2194559"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2194559" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2194559">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2192175" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6327243"><span></span><img alt="" src="/images/default_avatars/Citizens/default_male_55x55.gif"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2192175/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6327243">alfonso19</a>
+											<em>wrote 14 days ago</em>
+					
+					</h6>
+					<p>
+													xq no me deja mejorar mis empresas?? no me da opcion para hacerlo											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2192175" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2192175">8</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2192175">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2192175">
+							<input type="hidden" value="1" id="no_likes_post_2192175">
+							<span id="post_like_text_2192175">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="">Previous comments</a>
+							</div>
+							<ul id="comments_container_2192175"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2192175" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2192175">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2190773" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/6272898"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2012/07/13/5c34b00912561f538f05346127eb858b_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+											<a target="reportpopup" onclick="windowOpener(450, 520, this.target, this.href); return false;" href="/en/tickets/report/2190773/mu_post/L2Vu" class="report">Report</a>
+															</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/6272898">jesusrece</a>
+											<em>wrote 14 days ago</em>
+					
+					</h6>
+					<p>
+													¿Qué es lo de BH?<br>
+											</p>
+					<div class="post_actions  no_votes">
+						<a trigger="show" title="" id="post_stats_2190773" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2190773">3</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2190773">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2190773">
+							<input type="hidden" value="1" id="no_likes_post_2190773">
+							<span id="post_like_text_2190773">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2190773"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2190773" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2190773">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+					<li id="post_2190368" class="wall_post" style="display: none">
+				<a target="_blank" class="user_pic" title="" href="/en/citizen/profile/3130969"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91_55x55.jpg"></a>
+				<div class="post_content">
+					<div class="second_actions">
+																<a class="remove_post" trigger="remove_post" title="Remove post" href="javascript:;">x</a>
+										</div>
+					<h6>
+						<a title="" href="/en/citizen/profile/3130969">{$myNick}</a>
+											<em>wrote 14 days ago</em>
+					
+					</h6>
+					<p>
+													Realmente vale la penta un gym que cada uso cueste oro? Quién puede permitírselo aparte de los visa players?											</p>
+					<div class="post_actions no_comments no_votes">
+						<a trigger="show" title="" id="post_stats_2190368" class="post_stats" href="javascript:;">
+							<em trigger="show" class="comment_counter" id="counter_for_2190368">0</em>
+							<em trigger="show" class="vote_counter" id="vote_for_2190368">1</em>
+						</a>
+						<span class="first_dot">·</span>
+																			<a trigger="reply" rel="comment" title="" href="javascript:;">Comment</a>
+																							</div>
+
+					<div class="post_comments">
+											<div class="vote_bar">
+						<div style="" id="post_likes_2190368">
+							<input type="hidden" value="1" id="no_likes_post_2190368">
+							<span id="post_like_text_2190368">
+                                <em class="first_display"></em>
+								</span>
+							</div>
+						</div>
+																			<div class="big_blue">
+								<a title="" trigger="previous_comments" class="previous_comments" href="javascript:;" style="display: none;">Previous comments</a>
+							</div>
+							<ul id="comments_container_2190368"></ul>
+													<div class="comment_reply">
+							<a class="user_pic" title="" href="javascript:;"><span></span><img alt="" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91.jpg"></a>
+								<div trigger="expand" class="fake_input">Write a comment…</div>
+								<textarea trigger="expand" title="Write a comment" maxlength="480" class="comment_reply_post">Write a comment…</textarea>
+								<a id="comments_for_2190368" trigger="add_comment" title="" class="plain_blue_small comment_button" href="javascript:;"><span trigger="add_comment" id="comments_add_2190368">Comment</span></a>
+							</div>
+											</div>
+				</div>
+			</li>
+						</ul>
+	</div>
+	</div>
+	<div style="display: none;" id="citizen_older_feeds" class="previous_posts">
+		<input type="hidden" value="1" name="next" id="previous_posts"><input type="hidden" value="0" id="viewFirst" name="viewFirst"><input type="hidden" name="posts_count" id="posts_count" value="12"><a trigger="previous_posts" class="blue_arrow_down_medium" title="Older posts" href="javascript:;"><span trigger="previous_posts">Older posts</span></a>
+	</div>
+				<div id="group_older_feeds" class="previous_posts"><a trigger="previous_group_posts" class="blue_arrow_down_medium" title="Older posts" href="javascript:;"><span trigger="previous_group_posts">Older posts</span></a></div>
+				<input type="hidden" value="562" id="groupId">
+			<input type="hidden" value="1" id="isGroupFeed">
+		<input type="hidden" value="12" id="postCount">
+		<input type="hidden" value="0" id="partyPostCount">
+</div>
+		</div>
+	</div>
+<div style="width:394px;padding-right:15px;" class="column">
+		<script type="text/javascript">
+		$j(document).ready(function() {
+			$j('.mass_banner span').tipsy({
+				gravity: 'w',
+				live: true
+			});
+		});
+	</script>
+
+
+	
+
+			
+
+						
+			
+																																							
+
+			
+
+	
+	
+	<div class="clear"></div>
+			<div id="wall_master">
+			<script>
+	$j(document).ready(function() {if(axs.hc()) { $j('#shout').css('width', '289px');}});
+        var culture = "en";
+        var wall_texts = {
+            'say_something_to_your_party_colleagues':'Say something to your party colleagues',
+            'say_something_to_your_friends' : 'Say something to your friends',
+            'are_you_sure_you_want_to_delete_this_comment' : 'Are you sure you want to delete this comment?',
+            'are_you_sure_you_want_to_remove_this_post' : 'Are you sure you want to remove this post?'
+        };
+</script>
+<input type="hidden" value="You&lt;/b&gt; voted this." id="you_voted_this">
+<input type="hidden" value="You and &lt;/b&gt;" id="you_and">
+<input type="hidden" value="You, &lt;/b&gt;" id="you">
+<input type="hidden" value="characters left" id="characters_left">
+	   
+      
+		</div>
+	</div>
+
+<input type="hidden" value="true" id="isHomepage" />

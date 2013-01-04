@@ -1,0 +1,69 @@
+<div class="holder top_border">
+	  <div class="msg_title_container">
+	<div class="msg_buttons">
+	  <form action="/en/main/messages-delete" method="post">
+		<input type="hidden" id="_token" name="_token" value="2a194db54cf85969d19ee6182afcdf1e" />
+		<input type="hidden" value="78535962" id="delete_message_78535962" name="delete_message[]">
+		<a href="#" class="fluid_blue_light_medium" name="message_delete_trigger" title="submit"><span>Delete</span></a>
+	  </form>
+	  <a href="/en/main/messages-paginated/1" class="fluid_blue_light_medium message_get"><span>All Messages</span></a>
+	  	   <a class="report fluid_blue_light_medium" target="reportpopup" onClick="windowOpener(450, 520, this.target, this.href); return false;"
+		  href="/en/tickets/report/78535962/private_message_abuse"><span>Report</span></a>
+	  	</div>
+	  <h3>{$title}</h3>  </div>
+
+  <div class="message_item_container message_unread">
+  <div class="avatarholder">
+	<img width="35" height="35" alt="muertet" src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91_55x55.jpg" class="icon" />
+  </div>
+  <div class="message_container blue">
+	<div class="coloured">
+	  	  <div class="nameholder" onMouseOver="$j('span#people_list_35010971').removeClass('hide'); $j('span#people_count_35010971').addClass('hide');" onMouseOut="$j('span#people_list_35010971').addClass('hide'); $j('span#people_count_35010971').removeClass('hide');">
+		<a title="muertet" href="/en/citizen/profile/3130969">{$nick}</a>
+
+		to <a title="Sergio619" href="/en/citizen/profile/1709643">Sergio619</a> and <span id="people_count_35010971">1 more people</span><span id="people_list_35010971" class="hide"><a title="Razican" href="/en/citizen/profile/2016559">Razican</a></span> |
+		now	  </div>
+	</div>
+	<div class="left_arrow"></div>
+	<div class="msg_body">
+	  {$message}	</div>
+  </div>
+</div>  <div class="msg_title_container">
+	<div class="msg_buttons">
+	  <form action="/en/main/messages-delete" method="post">
+		<input type="hidden" id="_token" name="_token" value="2a194db54cf85969d19ee6182afcdf1e" />
+		<input type="hidden" value="78535962" id="delete_message_78535962" name="delete_message[]">
+		<a href="#" class="fluid_blue_light_medium" name="message_delete_trigger" title="submit"><span>Delete</span></a>
+	  </form>
+	  <a href="/en/main/messages-paginated/1" class="fluid_blue_light_medium message_get"><span>All Messages</span></a>
+	  	   <a class="report fluid_blue_light_medium" target="reportpopup" onClick="windowOpener(450, 520, this.target, this.href); return false;"
+		  href="/en/tickets/report/78535962/private_message_abuse"><span>Report</span></a>
+	  	</div>
+	  <br clear="all" />  </div>
+<div class="message_item_container form">
+  <div class="message_container blue">
+	<div class="coloured">
+	  	  <form id="message_form" method="post" action="/en/main/messages-compose/0">
+		<input type="hidden" id="_token" name="_token" value="2a194db54cf85969d19ee6182afcdf1e" />
+		<input type="hidden" id="thread_id" name="thread_id" value="78535962" />
+		<textarea class="textarea padded"  maxlength="2000" id="citizen_message" name="citizen_message"></textarea>
+		<small id="chars_remaining">2000 characters left</small>
+						<a href="#" title="submit" class="fluid_blue_dark_medium"><span class="bold">Send</span></a>
+	  </form>
+	  <div id="sending_message_indicator">Sending your message</div>
+	</div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  $j(document).ready(function() {
+	$j('textarea[maxlength]').limitMaxlength({
+		onEdit: onEditCallback,
+		onLimit: onLimitCallback
+	});
+  });
+</script>
+</div>
+
+<span id="report_message_confirmation">Are you sure you wish to report this conversation?</span>

@@ -1,0 +1,810 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//en" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html itemscope itemtype="http://schema.org/Product" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="title" content="eRepublik" />
+<meta name="robots" content="index, follow" />
+<meta name="description" content="Check your Citizen status, read the latest news in Erepublik, shout something to your friends and go to work." />
+<meta name="keywords" content="" />
+<meta name="language" content="en" />
+<meta property="og:image" content="/images/modules/homepage/logo.png" />
+<meta itemprop="name" content="eRepublik - The New World | Online Social Strategy Game" />
+<meta itemprop="description" content="Create your Citizen and you will have the opportunity to develop your military, economy or political career." />
+<meta itemprop="image" content="/images/modules/homepage/logo.png" />
+<title>eRepublik</title>
+<link rel="shortcut icon" href="/images/favicon.ico" />
+<link rel="stylesheet" href="/css/cmp/layout.1348246634.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/css/cmp/app.1348246634.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/css/cmp/pvp.1348227315.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/css/cmp/my_land.1347434131.css" type="text/css" media="screen" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin-ext,cyrillic,latin' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/fonts/Franchise/font.css?1309958974" type="text/css" />
+<link rel="stylesheet" href="/fonts/Delicious/font.css?1309958974" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin-ext,cyrillic,latin' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300&subset=latin,greek-ext,cyrillic-ext,greek,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&subset=latin,cyrillic,greek' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="/js/mainController.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="/css/cmp/ie.css" type="text/css" media="screen" />
+<![endif]-->
+<script type="text/javascript" charset="utf-8">
+	// eRepublik namespace
+	var erepublik = {
+		settings: {
+			notifications: 0,
+			hostname: 'http://erepublik.yelidmod.com',
+			domainname: 'erepublik.yelidmod.com',
+			culture: 'en'
+		}
+	}
+
+	var hostname = erepublik.settings.hostname;//do not remove this
+	var domainname =  erepublik.settings.domainname;//do not remove this
+	var economyhostname = 'economy.erepublik.com';//do not remove this
+	var culture = erepublik.settings.culture;//do not remove this
+	var short_links = {"inventory":"http:\/\/erepublik.yelidmod.com\/en\/economy\/inventory","myland":"http:\/\/erepublik.yelidmod.com\/en\/economy\/myCompanies","campaigns":"http:\/\/erepublik.yelidmod.com\/en\/military\/campaigns","top_news":"http:\/\/erepublik.yelidmod.com\/en\/news\/international","new_message":"http:\/\/erepublik.yelidmod.com\/en\/main\/messages-compose\/0","world_map":"http:\/\/erepublik.yelidmod.com\/en\/map","military_unit":"http:\/\/erepublik.yelidmod.com\/en\/main\/group-home\/military","alerts":"http:\/\/erepublik.yelidmod.com\/en\/main\/messages-alerts\/1"};
+</script>
+<script type="text/javascript" charset="utf-8">
+	window.confirmation = {
+		ok: 'ok',
+		yes: 'yes',
+		no: 'no'
+	};
+</script>
+<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<!--script>window.jQuery || document.write("<script src='/js/jquery.min.js'>\x3C/script>")</script-->
+<script type="text/javascript">var $j = jQuery.noConflict();</script>
+<script type="text/javascript" src="/js/jquery.hotkeys.js"></script>
+<script type="text/javascript" src="/js/axs.js"></script>
+<script type="text/javascript" src="/js/misc.1344440823.js"></script>
+<script type="text/javascript" src="/js/ambient.js"></script>
+<script type="text/javascript" src="/js/citizen/energy.1346930550.js"></script>
+<script type="text/javascript" src="/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/js/awards/awards.1343311006.js"></script>
+<script type="text/javascript" src="/js/GX.js"></script>
+<script type="text/javascript" src="/js/GX.transitions.js"></script>
+<script type="text/javascript" src="/js/jquery.lightbox_me.js"></script>
+<script type="text/javascript" src="/js/global.1348227315.js"></script>
+<script type="text/javascript" src="/js/tutorial/tutorial.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+	if (top !=self) {
+		top.location=self.location;
+	}
+</script>
+
+<script type="text/javascript" src="/js/missions/missions.1348227315.js"></script>
+<script type="text/javascript" src="/js/ERPK.js?v=1"></script>
+<script type="text/javascript" src="/js/jquery.countdown.pack.js"></script>
+<script type="text/javascript" src="/js/GX.js?1334921039"></script>
+<script type="text/javascript" src="/js/GX.transitions.js?1334921039"></script>
+<script type="text/javascript" src="/js/jquery.textarea-expander.js?1334921039"></script>
+<script type="text/javascript" src="/js/jquery.limitMaxlength.js?1334921039"></script>
+<script type="text/javascript" src="/js/jquery.tipsy.js?1334921039"></script>
+<script type="text/javascript" src="/js/homepage/import_contacts.js?1346744629"></script>
+<script type="text/javascript" src="/js/homepage/rw.js?1337264590"></script>
+<script type="text/javascript" src="/js/groups/show.js?1337854431"></script>
+<script type="text/javascript" src="/js/homepage/wall.js?1339757435"></script>
+<script type="text/javascript" src="/js/jquery.lightbox_me.js?1334921039"></script>
+<link rel="stylesheet" href="/css/cmp/homepage.css?1347434131" type="text/css" />
+<link rel="stylesheet" href="/css/cmp/newspaper.css?1347434131" type="text/css" />
+<link rel="stylesheet" href="/css/cmp/tutorial.css?1347434131" type="text/css" />
+<link rel="stylesheet" href="/css/cmp/friends.css?1347434131" type="text/css" />
+
+<script type="text/javascript" charset="utf-8">
+	var citizen_regionList_select = "Select your eRepublik region.";
+	var citizen_regionList_no_region = "The country selected does not have any regions.";
+	var citizen_items_confirm = "Are you sure you want to throw away this item? Maybe you want to donate it to someone else.";
+	var citizen_friends_prev = "Prev";
+	var citizen_friends_next = "Next";
+	var company_browsers_quality_level = "Quality Level";
+	var election_list_select_party = "Please select a party";
+	var scriptFeeds_countryAccounts_choose = "Choose";
+	var scriptFeeds_proposedCongressman_search = "Search";
+	var scriptFeeds_proposedCongressman_close = "Close";
+	var scriptFeeds_proposedCongressman_replace = "Replace";
+	var scriptFeeds_proposedCongressman_close = "Close";
+	var scriptFeeds_proposedCongressman_presentation = "Presentation";
+	var scriptFeeds_proposedCongressman_no_presentation = "No presentation";
+	var scriptFeeds_regionList_select = "Select your eRepublik region";
+	var register_region_list_belongs_to = "annexed by ";
+	var citizenship_application_accepted = "Accepted!"
+	var citizenship_application_canceled = "You have canceled your citizenship application"
+	var citizenship_application_cancel_confirm = "Are you sure you want to cancel your citizenship application?"
+	var company_market_offers_invalid_amount = "Please enter a valid amount";
+	var company_market_offers_invalid_price = "Please enter a valid price";
+	var company_market_offers_invalid_country = "Please select a new market";
+	var company_market_offers_embargo_confirm = "Even if you buy this market license, you won't be able to trade with this country due to a trading embargo. Are you sure you want to buy this market license?";
+	var company_market_offers_atwar_confirm = "Even if you buy this market license, you won't be able to trade with this country due to a war. Are you sure you want to buy this market license?";
+	var company_market_offers_remove_confirm = "Because your company has changed it's product customization, you cannot take this products back into your company stock anymore. However, you can remove the current market offer by destroying your products. Do you want to proceed and destroy these products?";
+	var company_create_same_industry_error = "You cannot own two companies in the same industry.";
+	var citizen_profile_show_all_skills = "show all skills";
+	var citizen_profile_hide_all_skills = "hide all skills";
+	var citizen_move_countryList_select = "Please select a country.";
+	var citizen_move_regionList_select = "Please select a region.";
+	var timeManagement_buy_wellness_pack_confirm = "Are you sure you want to buy a health pack for %%1%% Gold?";
+	var company_customize = "All products in stock, finished components and components in progress will be lost. Are you sure?";
+	var missions_unlock_confirm = "Are you sure you want to unlock for %%1%% Gold?";
+	var migrate_company_industry_confirm = "Are you sure that you want to migrate the %%1%% from %%2%% industry into %%3%% industry? Only one migration is allowed and its effects are irreversible";
+	var eat_food_confirm = "One unit of quality %%1%% food will be consumed but you will recover only %%2%% Energy. Would you like to use it anyway?";
+	var energy_confirm = "You are about to consume an Energy Bar. This will restore your energy with 100 without affecting your daily food consumption limit. Continue?";
+</script>
+<script type="text/javascript">
+	/*
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2001550-1']);
+	_gaq.push(['_setDomainName', 'erepublik.com']);
+	_gaq.push(['_trackPageview']);
+			
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+*/
+</script>
+
+</head>
+<body id="homepage_feed" >
+	<div id="fb-root"></div>
+	<script type="text/javascript">
+		/*window.fbAsyncInit = function() {
+			FB.init({
+                appId: '300511377223',
+				status: true,
+				cookie: true,
+				xfbml: true,
+				channelUrl: '/xd_receiver.htm'
+			});
+        };
+        (function(d){
+	     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement('script'); js.id = id; js.async = true;
+	     js.src = "//connect.facebook.net/en_US/all.js";
+	     ref.parentNode.insertBefore(js, ref);
+	   }(document));*/
+	</script>
+	<!--[if lt IE 9]>
+    <script type="text/javascript">
+            var IE6UPDATE_OPTIONS = {
+                    icons_path: "/images/ie6/"
+            }
+    </script>
+    <script type="text/javascript" src="/js/ie6update.js"></script>
+    <![endif]-->
+<div class="at">
+    <div class="ath">
+        <a href="javascript:;" class="ambient_toggler"><span>Ambient on/off</span></a>
+    </div>
+</div>
+	<div id="container">
+		<div id="header">
+			<div id="logo" title="eRepublik - Online Strategy Game">
+				<a href="/" title="eRepublik - Online Strategy Game"><span>eRepublik – Online Strategy Game</span></a>
+			</div>
+									<div class="facebook_like">
+				<strong><a href="http://www.facebook.com/eRepublik">eRepublik Fan Page</a></strong><br>
+				<iframe src="http://www.facebook.com/plugins/like.php?app_id=210611115655687&amp;href=http://www.facebook.com/eRepublik&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;float:left;clear:both;" allowTransparency="true"></iframe>
+				<em>
+				</em>
+			</div>
+						<div class="header_info">
+				<div>
+					<span id="live_time" class="time"></span>
+					<span class="date">Sep 23</span>
+					<span class="eday">
+						Day <strong>1,769</strong> of the New World					</span>
+				</div>
+				<div id="searchholder"></div>
+			</div>
+						<!-- <div class="advisor">
+				<div id="hinfo">
+					<div id="clock" >
+						<span id="live_time" class="time"></span>
+						<span class="date">Sep23</span>
+						<span class="eday">
+							Day <strong>1,769</strong> of the New World						</span>
+					</div>
+					<div id="searchholder"></div>
+				</div>
+			</div> -->
+		</div>
+		    <div id="menuText">
+					<ul id="nav">
+	<li id="menu1">
+		<a href="/en"><span>Home</span></a>
+	</li>
+    <li id="menu2">
+		<a href="/en/economy/myCompanies">
+			<span>My places</span>
+		</a>
+	</li>
+	<li id="menu3">
+		<a href="/en/military/campaigns"><span>Wars</span></a>
+	</li>
+		<li id="menu4">
+		<p></p>
+		<a href="javascript:;"><span>Market</span></a>
+		<ul>
+			<li><a href="/en/economy/market/15">Marketplace</a></li>
+			<li><a href="/en/economy/job-market/15">Job market</a></li>
+			<li><a href="/en/economy/exchange-market/">Monetary market</a></li>
+			<li><a href="http://economy.erepublik.com/en/market/company/15">Companies for sale</a></li>
+		</ul>
+	</li>
+	<li id="menu5">
+		<a href="#"><span>Community</span></a>
+		<ul>
+			<li><a href="/en/map"  rel="nofollow">World map</a></li>
+						<li><a href="/en/main/my-party" rel="nofollow">My party</a></li>
+			<li><a href="/en/main/elections">Elections</a></li>
+						<li><a href="/en/main/group-home/military">Military unit</a></li>
+												                            <li><a href="/en/invite-friends">Invite friends</a></li>
+             						            			<li><a href="/en/badges">Badges</a></li>
+            		</ul>
+	</li>
+
+	<li id="menu6">
+
+         
+            <a href="/en/get-gold/gold"><span>Gold and Extras</span></a>
+        	</li>
+</ul>
+</div>
+
+		<div id="large_sidebar">
+						<a id="financier" href="/en/citizen/profile/{$myUID}"></a>
+			<div class="user_section" style="position: relative;">
+				<a href="/en/citizen/profile/{$myUID}" class="user_avatar" title="{$myNick}">
+					<img src="http://static.erepublik.com/uploads/avatars/Citizens/2010/04/11/07bbeba2d986a7374a30445849d71f91_55x55.jpg" alt="{$myNick}" width="40" height="40" />
+				</a>
+				<div class="user_info">
+					<a href="/en/citizen/profile/{$myUID}">{$myNick}</a>
+					<div class="user_level">
+													<b>24</b>
+												<div class="user_progress">
+															<div class="progress_bar" style="width:21%"><span></span></div>
+													</div>
+						<a class="user_country" href="/en/country/society/Spain">
+							<img src="/images/flags_png/S/Spain.png" alt="" />
+						</a>
+					</div>
+					<div id="experienceTooltip" class="simple_yellow" style="display:none; width: 120px; position: absolute; top: 50px;">
+						<img src="/images/modules/sidebar/yellow_arrow_tip.png" class="tip" alt="" />
+							Experience level: <strong>24</strong><br />
+							Experience points: <strong>{$myExp}</strong><br />
+							Next level at: <strong>5000</strong>
+					</div>
+				</div>
+			</div>
+
+
+						<div class="user_health">
+				<script type="text/javascript">
+					var reset_health_to_recover = {$myMaxHp};
+					var reset_has_food = 1;
+					var show_reset = true;
+					var new_date = '0:3:32';
+					globalNS.userInfo.wellness = {$myCurrentHp};
+					globalNS.userInfo.specialFoodAmount = 1;
+				</script>
+										<input type="hidden" value="d05904f6675e1e2fd3126e078d387a01" id="a69925ed4a6ac8d4b191ead1ab58e853">
+						<div class="health_bar ">
+							<img src="/images/modules/sidebar/energy_bar_icon.png" alt="" class="health_icon" />
+							<strong id="current_health">{$myCurrentHp} / {$myMaxHp}</strong>
+							<div class="progress" id="health_bar_progress" style="width:{$widthHp}%">
+							</div>
+							<div class="back_progress" id="health_back_progress" style="width: 44%"></div>
+						</div>
+                        						<a href="javascript:;" title="Upgrade Residences" class="upgrade_health_building ">Upgrade Residences</a>
+                        
+						<a href="javascript:;" title="" class="eat_food_wide     reset" id="DailyConsumtionTrigger">
+							<img src="/images/modules/sidebar/eating.gif" id="eatload" alt="" width="139" height="23"/>
+							<q>
+									<span>
+										<img alt="" class="warn" src="/images/modules/_icons/swarning.png" />
+									</span>
+									<input type="hidden" id="eat_energy_text" value="Energy Bar" />
+									<input type="hidden" id="eat_food_text" value="Recover Energy" />
+									<input type="hidden" id="buy_food_text" value="Buy food" />
+									<strong id="foodText">Recover Energy</strong>
+							</q>
+						</a>
+
+						<p class="recover_health" id="foodResetHoursContainer" style="display: none;">Recover <strong>10</strong> more in <em id="foodResetHours">00:59:59</em></p>
+
+								<div id="eatFoodTooltip" class="simple_yellow" style="display:none; width: 250px; position: absolute; top: 70px;">
+					<input type="hidden" id="valid_for_energy_text" value="You will consume one Energy Bar to recover Energy. This does not affect the amount of Energy you can recover by eating food.">
+					<input type="hidden" id="valid_for_food_text" value="This action recovers as much Energy as possible by consuming Food from your Storage.">
+					<input type="hidden" id="valid_for_buy_text" value="You have consumed all the food in your Storage. Buy more from the Marketplace to recover your Energy.">
+					<img src="/images/modules/sidebar/yellow_arrow_tip.png" class="tip" alt="" />
+					<p>
+												This action recovers as much Energy as possible by consuming Food from your Storage.											</p>
+
+										<p style="margin:0">
+						You can recover <big class="tooltip_health_limit">60</big> more Energy						<img class="mini_health" src="/images/modules/_icons/mini_energy.png" alt="" />
+					</p>
+				</div>
+				<div id="wellnessTooltip" class="simple_yellow" style="display:none;width:250px; position: absolute; top: 40px;">
+					<img src="/images/modules/sidebar/yellow_arrow_tip.png" class="tip" alt="" />
+					&bull;&nbsp;Working, training and fighting decreases your Energy<br />
+					&bull;&nbsp;Food, Energy Bars and First Aid Kits restore energy				</div>
+			</div>
+						<div class="user_finances">
+				<div class="gold_amount">
+					<p>
+						<img src="/images/modules/_icons/gold_icon.png" alt="Gold" />
+						<strong id="side_bar_gold_account_value">{$myGold}</strong>&nbsp;<span>Gold</span>
+					</p>
+									</div>
+				<div class="currency_amount">
+					 <p>
+						<img src="/images/flags_png/S/Spain.png" alt="ESP" title="ESP" />
+						<strong>{$myMoney}</strong>&nbsp;<span>ESP</span>
+					 </p>
+				</div>
+			</div>
+			                				<input type="hidden" id="c_hash" value="07bbeba2d986a7374a30445849d71f91"/>
+                    <div class="user_missions extended">
+	<script type="text/javascript">
+		var missionsJSON = [{"id":63,"title":"Spain needs help!","description":"Opponents are getting stronger! The national army needs fresh blood. Let's call for some support!<br \/><br \/> <strong>Attention!<\/strong> Respect the eRepublik Laws while solving this mission!","rewards":[{"category":"gold","value":4},{"category":"experience_points","value":4},{"category":"","value":0}],"conditions":["Get a new citizen in your country","Help him reach Lieutenant Rank Level",""],"conditionsUnlock":[14,14,0],"hint":{"hints":{"1":"Stay in touch with him and encourage him to fight every day."},"links":[{"url":"http:\/\/erepublik.yelidmod.com\/en\/invite-friends","link":"Invite friends"}]},"img":"http:\/\/erepublik.yelidmod.com\/images\/modules\/missions\/63.png","partial":[],"isOld":1,"type":"land","conditionIcons":[true,true]},{"id":64,"title":"Work with your friends (I)","description":"Work with your friends for a better productivity.","rewards":[{"category":"money","value":40},{"category":"experience_points","value":4},{"category":"","value":0}],"conditions":["Post a job offer and hire a citizen","Pay one salary to another citizen",""],"conditionsUnlock":[14,14,0],"hint":{"hints":["Select the Manage employees button from your companies page. <br \/>Keep the citizen employed in order to complete the mission.","Check the salaries in your country and your offer."],"links":{"1":{"url":"http:\/\/erepublik.yelidmod.com\/en\/economy\/job-market\/15","link":"Go to Job market"}}},"img":"http:\/\/erepublik.yelidmod.com\/images\/modules\/missions\/64.png","partial":[],"isOld":1,"type":"land","conditionIcons":[true,true]},{"id":66,"title":"Train more, get stronger","description":"The stronger you are, the higher your damage will be.","rewards":[{"category":"military_skill","value":16},{"category":"","value":0},{"category":"","value":0}],"conditions":["Train for 4 different days","Train using 2 different training grounds",""],"conditionsUnlock":[14,14,0],"hint":{"hints":["Train using your training grounds.","Have at least 2 different training grounds. You can build more from the build menu."],"links":[{"url":"http:\/\/erepublik.yelidmod.com\/en\/economy\/myCompanies","link":"My companies","is_land":true},{"url":"http:\/\/erepublik.yelidmod.com\/en\/economy\/myCompanies","link":"My companies","is_land":true}]},"img":"http:\/\/erepublik.yelidmod.com\/images\/modules\/missions\/66.png","partial":["times trained","buildings"],"isOld":0,"type":"land","conditionIcons":[true,true]},{"id":67,"title":"Become a brave soldier","description":"Army is about being united and fight where the country needs you.","rewards":[{"category":"energy_bar","value":4},{"category":"bazooka","value":4},{"category":"","value":0}],"conditions":["Join a military unit that fits you","Complete your daily orders for 4 different days",""],"conditionsUnlock":[4,44,0],"hint":{"hints":{"1":"You can find your order every day on the homepage. If not, use your military unit feed to ask for orders from your commander or captain."},"links":[{"url":"http:\/\/erepublik.yelidmod.com\/en\/main\/group-home\/military","link":"See recommended Military Units"}]},"img":"http:\/\/erepublik.yelidmod.com\/images\/modules\/missions\/67.png","partial":{"1":"days"},"isOld":1,"type":"land","conditionIcons":[true,true]},{"id":70,"title":"It's time to get a medal","description":"Dedicated players get achievements! Get one too!","rewards":[{"category":"experience_points","value":44},{"category":"gold","value":4},{"category":"","value":0}],"conditions":["Get a hard worker achievement","",""],"conditionsUnlock":[44,0,0],"hint":{"hints":["Work for 30 different days to receive the hard worker achievement."],"links":[]},"img":"http:\/\/erepublik.yelidmod.com\/images\/modules\/missions\/70.png","partial":[],"isOld":1,"type":"land","conditionIcons":[true]},{"id":68,"title":"Big battle time","description":"Big battles are for strong and dedicated soldiers. Prove that you're one of them.","rewards":[{"category":"military_skill","value":44},{"category":"military_rank","value":4444},{"category":"","value":0}],"conditions":["Defeat 444 opponents","",""],"conditionsUnlock":[94,0,0],"hint":{"hints":false,"links":[{"url":"http:\/\/erepublik.yelidmod.com\/en\/military\/campaigns","link":"Go to Military campaigns","is_battle":true}]},"img":"http:\/\/erepublik.yelidmod.com\/images\/modules\/missions\/68.png","partial":["enemies defeated"],"isOld":1,"type":"land","conditionIcons":[true]},{"id":44,"title":"True Mercenary (II)","description":"A true mercenary can tell many stories from many battlefields. Time for you to write history. Do you have what it takes?","rewards":[{"category":"money","value":1000},{"category":"military_rank","value":2500},{"category":"","value":0}],"conditions":["Defeat 25 enemies for 5 different countries","",""],"conditionsUnlock":[20,0,0],"hint":{"hints":["Defeat 25 enemies for each of the 5 countries you decide to fight for. This will also count in your progress for the Mercenary achievement on your profile."],"links":[{"url":"http:\/\/erepublik.yelidmod.com\/en\/citizen\/profile\/3130969","link":"Go to your profile"}]},"img":"http:\/\/erepublik.yelidmod.com\/images\/modules\/missions\/44.png","partial":["countries completed"],"isOld":1,"type":"military","conditionIcons":false},{"id":39,"title":"Full power ahead!","description":"There are times when you have no alternative but to attack with full strength to succeed.","rewards":[{"category":"military_skill","value":15},{"category":"energy_bar","value":1},{"category":"","value":0}],"conditions":["Recover at least 600 Energy per day for 5 days in a row","Defeat at least 10 enemies per day for 5 days in a row","Have 5 Q5 weapons in your inventory"],"conditionsUnlock":[0,0,0],"hint":{"hints":false,"links":{"1":{"url":"http:\/\/erepublik.yelidmod.com\/en\/military\/campaigns","link":"Go to your battle list","is_battle":true},"2":{"url":"http:\/\/erepublik.yelidmod.com\/en\/economy\/market\/15","link":"Go to Marketplace"}}},"img":"http:\/\/erepublik.yelidmod.com\/images\/modules\/missions\/39.png","partial":["days",["Weapons","Food."],["Weapons","Food."]],"isOld":1,"type":"military","conditionIcons":false}];
+		var csrfToken = 'd05904f6675e1e2fd3126e078d387a01';
+		var unlock_cost_text = "to complete";
+		var mainHost = erepublik.settings.domainname;
+					var isJsonP = false;
+				var MISSIONS_TEXTS = {
+			fight_text: 'Fight',
+			train_text: 'Train',
+			work_text:	'Work'
+		}
+	</script>
+
+	<div id="sidebar_missions">
+		<img src="/images/modules/missions/pop.png" id="point" width="18" alt="" />
+			<div class="content">
+				<b>Missions</b>
+				<div class="mission_bubble" style="display: none;">
+					<strong></strong>
+					<p></p>
+				</div>
+				<div class="mission_holder">
+
+				</div>
+			</div>
+ 		<div class="end"></div>
+				<div class="flares">
+			<img src="/images/modules/sidebar/flare_left.png" id="flare_left" alt="" />
+			<img src="/images/modules/sidebar/flare_right.png" id="flare_right" alt="" />
+		</div>
+	</div>
+	<div class="mission_pop land" id="mission_status">
+		<a href="javascript:;" class="close" title="Close window">X</a>
+		<div class="top"></div>
+		<div class="repeat">
+			<div class="content">
+				<h3>
+					<img src="/images/parts/pixel.gif" alt="" />
+					<b></b>
+				</h3>
+				<em></em>
+				<div class="requirements">
+					<div class="mission_error">
+						<strong>You don't have enough Gold to complete the task</strong>
+						<a href="/en/get-gold/gold" title="Get Gold" class="req_get_gold"><span>Get Gold</span></a>
+					</div>
+					<h2>Completed!</h2>
+					<ul class="req_content">
+						<li>
+							<img src="/images/parts/pixel.gif" class="mission_pic" alt=""/>
+							<span class="status"></span>
+							<div class="details">
+								<strong></strong>
+								<small></small>
+								<a href="javascript:;" class="hint"></a>
+							</div>
+							<div class="actions">
+								<q id="first_q">3/10</q>
+								<a href="javascript:;" title="" class="req_unlock disabled"></a>
+							</div>
+						</li>
+						<li>
+							<img src="/images/parts/pixel.gif" class="mission_pic" alt=""/>
+							<span class="status"></span>
+							<div class="details">
+								<strong></strong>
+								<small></small>
+								<a href="javascript:;" class="hint"></a>
+							</div>
+							<div class="actions">
+								<q>3/10</q>
+								<a href="javascript:;" title="" class="req_unlock disabled"></a>
+							</div>
+						</li>
+						<li>
+							<img src="/images/parts/pixel.gif" class="mission_pic" alt=""/>
+							<span class="status"></span>
+							<div class="details">
+								<strong></strong>
+								<small></small>
+								<a href="javascript:;" class="hint"></a>
+							</div>
+							<div class="actions">
+								<q>3/10</q>
+								<a href="javascript:;" title="" class="req_unlock disabled"></a>
+							</div>
+						</li>
+					</ul>
+					<div class="reward">
+					<h4>Reward</h4>
+					<table width="100%">
+						<tr>
+							<td>
+							</td>
+						</tr>
+					</table>
+					</div>
+									</div>
+				<a href="javascript:;" class="get_reward" title="">Ok</a>
+			</div>
+			<div class="end"></div>
+		</div>
+	</div>
+	<div id="mission_rank_popup" style="display:none" class="pop rank_up">
+		<div class="heading">
+			<img src="/images/parts/pixel.gif" class="next_rank mission_rank_img" alt="" />
+			<p>Congratulations, your rank is now</p>
+			<h2 id="mission_rank_name"></h2>
+		</div>
+		<div class="content">
+			<div>
+				<div class="symbol rank_holder">
+					<img src="/images/parts/pixel.gif" alt="" class="mission_rank_img"/>
+				</div>
+				<strong>Rank Bonus on attack</strong>
+				<big>+5%</big>
+			</div>
+			<div>
+				<img class="symbol" src="/images/modules/pvp/energy_bar.png" alt="" />
+				<strong>Energy bar</strong>
+			</div>
+		</div>
+		<a href="javascript:;" title="" id="mission_rank_popup_ok">Ok</a>
+	</div>
+</div>
+<div id="rewards_text" style="display:none;">
+	<div class="mskill">
+		<img src="/images/modules/_icons/strength_icon.png" alt="" />
+		<strong></strong>
+		<small>Strength</small>
+	</div>
+	<div class="xp">
+		<img src="/images/modules/_icons/xp_icon.png" alt="" />
+		<strong></strong>
+		<small>Experience Points</small>
+	</div>
+	<div class="health">
+		<img src="/images/modules/_icons/health_icon.png" alt="" />
+		<strong></strong>
+		<small>Energy</small>
+	</div>
+	<div class="mrank">
+		<img src="/images/modules/_icons/rank_icon.png" alt="" />
+		<strong></strong>
+		<small>Rank points</small>
+	</div>
+	<div class="gold">
+		<img src="/images/modules/homepage/gold.png" alt="" />
+		<strong></strong>
+		<small>Gold</small>
+	</div>
+	<div class="energy">
+		<img src="/images/modules/pvp/energy_bar.png" alt="" />
+		<strong></strong>
+		<small>Energy Bar</small>
+	</div>
+	<div class="money">
+		<img src="/images/flags_png/M/Spain.png" alt="ESP" title="ESP" />
+		<strong></strong>
+		<small>ESP</small>
+	</div>
+	<div class="land">
+		<img src="/images/modules/myland/new_land.png" style="margin-top:10px;" alt="" />
+		<strong></strong>
+		<small>Free Lands</small>
+	</div>
+	<div class="collection_parts">
+        <img src="/images/icons/industry/000/4.png" alt="" />
+        <strong></strong>
+        <small>Scope</small>
+    </div>
+    <div class="bazooka">
+        <img src="/images/icons/industry/000/1.png" alt="" />
+        <strong></strong>
+        <small>Bazooka</small>
+    </div>
+    <div class="q1weapon">
+		<img src="/images/icons/industry/2/q1_30x30.png" alt="" />
+		<strong></strong>
+		<small>Weapons</small>
+	</div>
+	<div class="q2weapon">
+		<img src="/images/icons/industry/2/q2_30x30.png" alt="" />
+		<strong></strong>
+		<small>Weapons</small>
+	</div>
+	<div class="q5weapon">
+        <img src="/images/icons/industry/2/q5_30x30.png" alt="" />
+        <strong></strong>
+        <small>Weapons</small>
+    </div>
+	<div class="q6weapon">
+        <img src="/images/icons/industry/2/q6_30x30.png" alt="" />
+        <strong></strong>
+        <small>Weapons</small>
+    </div>
+    <div class="q1food">
+		<img src="/images/icons/industry/1/q1_30x30.png" alt="" />
+		<strong></strong>
+		<small>Food units</small>
+	</div>
+    <div class="q2food">
+        <img src="/images/icons/industry/1/q2_30x30.png" alt="" />
+        <strong></strong>
+        <small>Food units</small>
+    </div>
+	<div class="q5food">
+        <img src="/images/icons/industry/1/q5_30x30.png" alt="" />
+        <strong></strong>
+        <small>Food units</small>
+    </div>
+	<div class="food_raw">
+        <img src="/images/icons/industry/7/default_30x30.png" alt="" />
+        <strong></strong>
+        <small>Food raw material</small>
+    </div>
+	<div class="weapon_raw">
+        <img src="/images/icons/industry/12/default_30x30.png" alt="" />
+        <strong></strong>
+        <small>Weapon raw material</small>
+    </div>
+	<div class="grain">
+        <img src="/images/modules/misc/grain_30.png" alt="" />
+        <strong></strong>
+        <small>Grain Farms</small>
+    </div>
+	<div class="iron">
+        <img src="/images/modules/misc/iron_30.png" alt="" />
+        <strong></strong>
+        <small>Iron Mine</small>
+    </div>
+	<div class="damage">
+        <img src="/images/modules/pvp/damage_icon.png" alt="" />
+        <strong></strong>
+        <small>Damage</small>
+    </div>
+	<div class="elite_ach">
+        <img src="/images/modules/_icons/top_player.png" alt="" />
+        <strong></strong>
+        <small>Elite Citizen Achievement</small>
+    </div>
+    <div class="toolbox">
+        <img src="/images/modules/myland/toolbox.png" alt="" />
+        <strong></strong>
+        <small>Toolbox</small>
+    </div>
+    <div class="storage">
+        <img src="/images/modules/manager/tab_storage.png" alt="" />
+        <strong></strong>
+        <small>Storage</small>
+    </div>
+	<div class="free_train">
+        <img src="/images/modules/myland/tip_icons/train.png" alt="" />
+        <strong></strong>
+        <small>Free Train Forever!</small>
+    </div>
+	<div class="bomb">
+        <img src="/images/icons/industry/999/22_30x30.png" alt="" />
+        <strong></strong>
+        <small>Bomb</small>
+    </div>
+    	<div class="rocket">
+        <img src="/images/icons/industry/999/26_30x30.png" alt="" />
+        <strong></strong>
+        <small>Rocket</small>
+    </div>
+	<div class="bboster">
+        <img src="/images/icons/industry/999/1_30x30.png" alt="" />
+        <strong></strong>
+        <small>Bazooka Booster</small>
+    </div>
+</div>
+
+
+                				<div class="award_pop_up">
+			<input type="hidden" name="_token" value="d05904f6675e1e2fd3126e078d387a01" id="award_token" />
+</div>
+<script type="text/javascript">
+$j(document).ready(function() {
+	$j('.reward_pop_box div').tipsy({
+		gravity: 's',
+		html: true
+	});
+});
+</script>						<div id="award_pop_up_ajax">
+			</div>
+			<div class="user_notify">
+				<a href="/en/main/messages-inbox" title="0 new messages" class="notify nmail">
+											<img src="/images/modules/sidebar/mail_icon_off.png" alt="" />
+									</a>
+				<a href="/en/main/messages-alerts/1" title="0 new alerts" class="notify nalert">
+											<img src="/images/modules/sidebar/alert_icon_off.png" alt="" />
+									</a>
+							</div>
+			                            <a href="/en/logout" class="logout">Logout</a>
+            			
+			
+
+			
+<div id="limit_health_pop" class="health_limit energ_limit">
+	<h2>Get more energy!</h2>
+	<p>
+		You have reached your food consumption limit.<br />
+		You can recover 10 energy every 6 minutes.	</p>
+	<div class="time_left">
+		<small>10 more recoverable Energy in:</small>
+		<em id="pop_timer">00:00:00</em>
+	</div>
+	<a href="/en/get-gold/health" class="get_health_text energy_bar" title="Buy Energy Bars"><span>Buy Energy Bars</span></a>
+	<a href="javascript:;" class="green_go" id="close_limit_health">Close</a>
+</div>
+
+<script type="text/javascript">
+	function sidebar_tooltip(trigger, tooltip){
+		$j(trigger).hover(
+			function() { $j(tooltip).css({ display: "block" }); },
+			function() { $j(tooltip).css({ display: "none" }); }
+		);
+	}
+	$j(document).ready(function() {
+			sidebar_tooltip("#current_health", "#wellnessTooltip");
+			sidebar_tooltip(".user_progress", "#experienceTooltip");
+			sidebar_tooltip("#DailyConsumtionTrigger", "#eatFoodTooltip");
+	});
+		linkForBuy = '/en/economy/market/15/1';
+	textForBuy = "Buy food";
+    food_remaining = parseInt("60", 10);
+	var smallestFood = {"q":"2","use":4};
+	</script>
+
+
+<script type="text/javascript">
+	var upgrade_town_hall_url = '/en/main/upgrade-town-hall';
+</script>
+
+<input type="hidden" id="has_bonus_buildings" name="has_bonus_buildings" value="0">
+
+</div>
+<div id="content">
+<script type="text/javascript">
+var SERVER_DATA = new Array();
+var temp = {
+			culture            : 'en',
+			csrfToken          : 'd05904f6675e1e2fd3126e078d387a01',
+			groupId			   : 562,
+			url				   : '/en/main/group-show/562',
+			text_for_new_recruit_order: "New recruit order has been set.",
+			text_for_daily_order_to_all_regiments: "The order has been proposed to all regiments.",
+			the_daily_order_has_been_set: "The daily order has been set",
+			new_battle_priorities_set_text : "New priorities have been set."
+			};
+			$j.extend(SERVER_DATA, temp);
+	var ARTICLES = {
+		culture: 'en'
+	}
+</script>
+{$content}
+</div>
+
+		<div id="footer" >
+                    		<p>
+
+		
+		<a href="/en/main/ga_track/wiki" target="_blank">Wiki</a> &nbsp; | &nbsp;
+		<a href="/en/main/latest-updates" target="_blank">Latest Updates</a> &nbsp; | &nbsp;
+		<a href="/en/main/ga_track/blog" target="_blank">Blog</a> &nbsp; | &nbsp;
+		<a href="/en/main/ga_track/press" target="_blank">Press</a> &nbsp; | &nbsp;
+		<a href="/en/main/ga_track/contact" rel="nofollow" target="_blank">Contact</a> &nbsp; | &nbsp;
+		<a href="/en/main/ga_track/jobs" rel="nofollow" target="_blank">Jobs</a> &nbsp; | &nbsp;
+
+		<a href="/en/main/ga_track/terms" rel="nofollow" target="_blank">Terms of Service</a> &nbsp; | &nbsp;
+		<a href="/en/main/ga_track/privacy" rel="nofollow" target="_blank">Privacy</a>&nbsp; | &nbsp;
+		<a href="/en/main/ga_track/affiliates" rel="nofollow" target="_blank">Affiliates</a>&nbsp; | &nbsp;
+		<a href="/en/main/ga_track/rules" rel="nofollow" target="_blank">eRepublik Laws</a>
+
+				</p>
+		<p class="follow">Follow us:            <a href="http://www.facebook.com/pages/Erepublik/26897053321?ref=ts" title="Facebook" target="_blank"><img alt="Facebook" src="/images/parts/facebook_small_icon.png" title="Facebook" />Facebook</a>
+            <a href="http://www.twitter.com/erepublik" title="Twitter" target="_blank"><img alt="Twitter" src="/images/parts/twitter_small_icon.png" title="Twitter" />Twitter</a>
+         </p>
+	<p>Copyright &copy; 2007-2012&nbsp;eRepublik</p>
+</div>
+			</div>
+
+
+
+
+<script type="text/javascript">
+$j(document).ready(function() {
+	var search_pkyk = '<form id="search" method="get" action="/en/main/search/">';
+	search_pkyk = search_pkyk +'<input type="text" name="q" id="search_field" value="Search citizen" class="field" />';
+	search_pkyk = search_pkyk +'<input type="submit" name="commit" value="" class="submit" disabled="disabled" />';
+	search_pkyk = search_pkyk +'</form>';
+	$j('div#searchholder').html(search_pkyk);
+	$j('#search').ERepublikSearchForm();
+    setTimeout(function(){window.location.reload(true)}, 1000*60*15);
+});
+</script>
+		<script type="text/javascript" language="Javascript" charset="utf-8">
+			live_clock("live_time",01,53);
+		</script>
+
+<!-- Correct fb_xd_fragment Bug Start -->
+<script type="text/javascript">
+document.getElementsByTagName('html')[0].style.display='block';
+</script>
+<!-- Correct fb_xd_fragment Bug End -->
+
+<div id="f_l_c"></div>
+
+ <script type="text/javascript">
+    var flc = new SWFObject("/flash/cookie.swf", "f_l_c", "1", "1", "9", "#ffffff");
+    flc.addParam("wmode", "transparent");
+    flc.addVariable("token","d05904f6675e1e2fd3126e078d387a01");
+    flc.addVariable("citizen_id","3130969");
+    flc.write("f_l_c");
+	$j(document).ready(function() {
+		mainController.init();
+	});
+  </script>
+
+<div id="shortcut_list" class="shortcuts">
+	<h3>List of eRepublik shortcuts</h3>
+	<ul>
+		<li>
+			<strong>Alerts</strong>
+			<em>Shift + A</em>
+		</li>
+		<li>
+			<strong>Military campaigns</strong>
+			<em>Shift + C</em>
+		</li>
+		<li>
+			<strong>Military unit</strong>
+			<em>Shift + M</em>
+		</li>
+		<li>
+			<strong>My places</strong>
+			<em>Shift + L</em>
+		</li>
+		<li>
+			<strong>New Message</strong>
+			<em>Shift + N</em>
+		</li>
+		<li>
+			<strong>Storage</strong>
+			<em>Shift + S</em>
+		</li>
+		<li>
+			<strong>Top news</strong>
+			<em>Shift + T</em>
+		</li>
+		<li>
+			<strong>World map</strong>
+			<em>Shift + W</em>
+		</li>
+	</ul>
+	<em>(press ESC to close)</em>
+</div>
+</body>
+</html>
