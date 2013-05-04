@@ -1,0 +1,165 @@
+html, body, #big_container {height: 100%;margin: 0;min-height: 100%;padding: 0;width: 100%;}
+html > body #big_container {height: auto;}
+#big_container {left: 0;position: absolute;top: 0;float:left;display:inline-block;}
+
+body{
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	height: 100%;
+	background-color:#d6cbbc;
+}
+
+.corner {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+input[type=text]{border:1px solid #999999;}
+.centrado {	margin: 0 auto;}
+.oculto {display: none;}
+.pointer{cursor:pointer;}
+.border{border:1px solid;}
+.aqua{background-color:aqua;}
+.blanco{background-color:#FFFFFF!important;}
+.float-right {float: right;}
+.float-left {float: left;}
+.margintop5 {margin-top: 5px!important;}
+.margintop10 {margin-top: 10px!important;}
+.margintop20 {margin-top: 20px;}
+.marginleft5 {margin-left: 5px!important;}
+.marginleft10 {margin-left: 10px!important;}
+.marginright5 {margin-right: 5px!important;}
+.marginright10 {margin-right: 10px!important;}
+.marginbottom5 {margin-bottom: 5px;}
+.marginbottom10 {margin-bottom: 10px;}
+.center {text-align: center;}
+.paddingleft10 {padding-left: 10px !important;}
+.padding10{padding: 10px !important;}
+.inline {display: inline;}
+.block {display: block;}
+.about{font-size:10px;}
+a:link, a:visited, a:active { text-decoration: none; }
+a img {border: 0}
+a{cursor:pointer;}
+ul{list-style:none;}
+.button{cursor:pointer;}
+
+/* clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+} 
+.clearfix {
+	display: inline-block;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+
+
+
+.tipsy { padding: 5px; font-size: 10px; opacity: 0.8; filter: alpha(opacity=80); background-repeat: no-repeat;  background-image: url(../images/tipsy.gif); }
+  .tipsy-inner { padding: 5px 8px 4px 8px; background-color: black; color: white; max-width: 200px; text-align: center; }
+  .tipsy-inner { -moz-border-radius:3px; -webkit-border-radius:3px; }
+  .tipsy-north { background-position: top center; }
+  .tipsy-south { background-position: bottom center; }
+  .tipsy-east { background-position: right center; }
+  .tipsy-west { background-position: left center; }
+  
+  #gritter-notice-wrapper {
+	position:fixed;
+	top:20px;
+	right:20px;
+	width:301px;
+	z-index:9999;
+}
+#gritter-notice-wrapper.top-left {
+    left: 20px;
+    right: auto;
+}
+#gritter-notice-wrapper.bottom-right {
+    top: auto;
+    left: auto;
+    bottom: 20px;
+    right: 20px;
+}
+#gritter-notice-wrapper.bottom-left {
+    top: auto;
+    right: auto;
+    bottom: 20px;
+    left: 20px;
+}
+.gritter-item-wrapper {
+	position:relative;
+	margin:0 0 10px 0;
+	background:url('http://recetas.yelidmod.com/images/ie-spacer.gif'); /* ie7/8 fix */ 
+}
+.gritter-top {
+	background:url('http://recetas.yelidmod.com/images/gritter.png') no-repeat left -30px;
+	height:10px;
+}
+.hover .gritter-top {
+	background-position:right -30px;
+}
+.gritter-bottom {
+	background:url('http://recetas.yelidmod.com/images/gritter.png') no-repeat left bottom;
+	height:8px;
+	margin:0;
+}
+.hover .gritter-bottom {
+	background-position: bottom right;
+}
+.gritter-item {
+	display:block;
+	background:url('http://recetas.yelidmod.com/images/gritter.png') no-repeat left -40px;
+	color:#eee;
+	padding:2px 11px 8px 11px;
+	font-size: 11px;
+	font-family:verdana;
+}
+.hover .gritter-item {
+	background-position:right -40px;
+}
+.gritter-item p {
+	padding:0;
+	margin:0;
+}
+.gritter-close {
+	display:none;
+	position:absolute;
+	top:5px;
+	left:3px;
+	background:url('http://recetas.yelidmod.com/images/gritter.png') no-repeat left top;
+	cursor:pointer;
+	width:30px;
+	height:30px;
+}
+.gritter-title {
+	font-size:14px;
+	font-weight:bold;
+	padding:0 0 7px 0;
+	display:block;
+	text-shadow:1px 1px #000; /* Not supported by IE :( */
+}
+.gritter-image {
+	width:48px;
+	height:48px;
+	float:left;
+}
+.gritter-with-image,
+.gritter-without-image {
+	padding:0 0 5px 0;
+}
+.gritter-with-image {
+	width:220px;
+	float:right;
+}
