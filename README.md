@@ -3,6 +3,16 @@ erepublik
 
 Unfinished eRepublik clone.
 
+HORRIBLE CODE
+=========
+
+DO NOT USE
+=========
+
+JESUS WILL CRY
+=========
+
+
 Install:
 * Import yelidmod_erepublik.sql
 * Edit includes/mysql.php with your mysql login info.
