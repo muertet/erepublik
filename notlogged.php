@@ -16,6 +16,7 @@ while($myArray=mysql_fetch_array($result)){
 $array_templates=array();
 $array_templates['categorias']=$cats;
 $array_templates['recaptcha_public']=$GLOBALS["recaptcha_public"];
+$array_templates['siteDomain']=$PATH_ARRAY["normal"];
 
 
 // Volquem les dades

@@ -1,0 +1,427 @@
+<script type="text/javascript" src="/js/to.js"></script>
+<script type="text/javascript" src="/js/company/create.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.js"></script>
+<script type="text/javascript" src="/js/sfJqueryFormVal/CompanyCreateForm"></script>
+<link rel="stylesheet" href="/css/cmp/company.css?1347434131" type="text/css" />
+			<h1>Build</h1>
+<div class="create_building localization">
+	<h3>Select building type</h3>
+	<div class="create_links">
+		<a title="Food Raw Materials" class="select_food choose_building " href="javascript:;"><span>Food Raw Materials</span></a>
+		<a title="Weapon Raw Materials" class="select_weapons choose_building " href="javascript:;"><span>Weapon Raw Materials</span></a>
+		<a title="Factories" class="select_factories choose_building " href="javascript:;"><span>Factories</span></a>
+		<a title="Storage" class="select_storage choose_building " href="javascript:;"><span>Storage</span></a>
+			</div>
+	<h3 style="display: none;" id="second_title">Select building</h3>
+	<ul class="buildings extended">
+						<li industry="7" style="display: none;" class="food ">
+			<span></span>
+			<a title="" href="javascript:;">
+				<img width="103" height="57" alt="" class="building" src="/images/buildings/7.png">
+				<em class="duo">
+					<img title="This company type cannot have any employees" alt="" class="down" src="/images/modules/company/works.png">
+					<span class="down">0</span>
+					<img title="Basic Productivity" alt="" src="/images/modules/myland/food_rm.png">
+					<span>35</span>
+				</em>
+				<strong>Grain Farm</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+																<img alt="" src="/images/flags_png/S/Spain.png" class="goldie">
+																1500							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+						<li industry="8" style="display: none;" class="food ">
+			<span></span>
+			<a title="" href="javascript:;">
+				<img width="103" height="57" alt="" class="building" src="/images/buildings/8.png">
+				<em class="duo">
+					<img title="This company type cannot have any employees" alt="" class="down" src="/images/modules/company/works.png">
+					<span class="down">0</span>
+					<img title="Basic Productivity" alt="" src="/images/modules/myland/food_rm.png">
+					<span>70</span>
+				</em>
+				<strong>Fruit Orchard</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+																<img alt="" src="/images/flags_png/S/Spain.png" class="goldie">
+																3000							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+						<li industry="9" style="display: none;" class="food ">
+			<span></span>
+			<a title="" href="javascript:;">
+				<img width="103" height="57" alt="" class="building" src="/images/buildings/9.png">
+				<em class="duo">
+					<img title="The number of employees you can hire" alt="" class="down" src="/images/modules/company/works.png">
+					<span class="down">1</span>
+					<img title="Basic Productivity" alt="" src="/images/modules/myland/food_rm.png">
+					<span>125</span>
+				</em>
+				<strong>Fishery</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+																<img alt="" src="/images/modules/_icons/gold.png" class="goldie">
+																10							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+						<li industry="10" style="display: none;" class="food ">
+			<span></span>
+			<a title="" href="javascript:;">
+				<img width="103" height="57" alt="" class="building" src="/images/buildings/10.png">
+				<em class="duo">
+					<img title="The number of employees you can hire" alt="" class="down" src="/images/modules/company/works.png">
+					<span class="down">1</span>
+					<img title="Basic Productivity" alt="" src="/images/modules/myland/food_rm.png">
+					<span>175</span>
+				</em>
+				<strong>Cattle Farm</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+																<img alt="" src="/images/flags_png/S/Spain.png" class="goldie">
+																8500							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+						<li industry="11" style="display: none;" class="food ">
+			<span></span>
+			<a title="" href="javascript:;">
+				<img width="103" height="57" alt="" class="building" src="/images/buildings/11.png">
+				<em class="duo">
+					<img title="The number of employees you can hire" alt="" class="down" src="/images/modules/company/works.png">
+					<span class="down">4</span>
+					<img title="Basic Productivity" alt="" src="/images/modules/myland/food_rm.png">
+					<span>250</span>
+				</em>
+				<strong>Hunting Lodge</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+																<img alt="" src="/images/modules/_icons/gold.png" class="goldie">
+																35							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+						<li industry="12" style="display: none;" class="weapon ">
+			<span></span>
+			<a title="" href="javascript:;">
+				<img width="103" height="57" alt="" class="building" src="/images/buildings/12.png">
+				<em class="duo">
+					<img title="This company type cannot have any employees" alt="" class="down" src="/images/modules/company/works.png">
+					<span class="down">0</span>
+					<img title="Basic Productivity" alt="" src="/images/modules/myland/weapon_rm.png">
+					<span>35</span>
+				</em>
+				<strong>Iron Mine</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+																<img alt="" src="/images/flags_png/S/Spain.png" class="goldie">
+																1500							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+						<li industry="13" style="display: none;" class="weapon ">
+			<span></span>
+			<a title="" href="javascript:;">
+				<img width="103" height="57" alt="" class="building" src="/images/buildings/13.png">
+				<em class="duo">
+					<img title="This company type cannot have any employees" alt="" class="down" src="/images/modules/company/works.png">
+					<span class="down">0</span>
+					<img title="Basic Productivity" alt="" src="/images/modules/myland/weapon_rm.png">
+					<span>70</span>
+				</em>
+				<strong>Oil Rig</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+																<img alt="" src="/images/flags_png/S/Spain.png" class="goldie">
+																3000							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+						<li industry="14" style="display: none;" class="weapon ">
+			<span></span>
+			<a title="" href="javascript:;">
+				<img width="103" height="57" alt="" class="building" src="/images/buildings/14.png">
+				<em class="duo">
+					<img title="The number of employees you can hire" alt="" class="down" src="/images/modules/company/works.png">
+					<span class="down">1</span>
+					<img title="Basic Productivity" alt="" src="/images/modules/myland/weapon_rm.png">
+					<span>125</span>
+				</em>
+				<strong>Aluminium Mine</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+																<img alt="" src="/images/modules/_icons/gold.png" class="goldie">
+																10							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+						<li industry="15" style="display: none;" class="weapon ">
+			<span></span>
+			<a title="" href="javascript:;">
+				<img width="103" height="57" alt="" class="building" src="/images/buildings/15.png">
+				<em class="duo">
+					<img title="The number of employees you can hire" alt="" class="down" src="/images/modules/company/works.png">
+					<span class="down">1</span>
+					<img title="Basic Productivity" alt="" src="/images/modules/myland/weapon_rm.png">
+					<span>175</span>
+				</em>
+				<strong>Saltpeter Mine</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+																<img alt="" src="/images/flags_png/S/Spain.png" class="goldie">
+																8500							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+						<li industry="16" style="display: none;" class="weapon ">
+			<span></span>
+			<a title="" href="javascript:;">
+				<img width="103" height="57" alt="" class="building" src="/images/buildings/16.png">
+				<em class="duo">
+					<img title="The number of employees you can hire" alt="" class="down" src="/images/modules/company/works.png">
+					<span class="down">4</span>
+					<img title="Basic Productivity" alt="" src="/images/modules/myland/weapon_rm.png">
+					<span>250</span>
+				</em>
+				<strong>Rubber Plantation</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+																<img alt="" src="/images/modules/_icons/gold.png" class="goldie">
+																35							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+				<li industry="1" style="display: none;" class="factories ">
+			<span></span>
+						<a title="" href="javascript:;">
+				<img width="103" height="57" alt="" class="building" src="/images/buildings/1.png">
+				<em class="duo">
+					<img title="Basic Productivity" alt="" src="/images/icons/industry/1/q1_30x30.png">
+					<span>100</span>
+					<img alt="" title="The number of employees you can hire" class="down" src="/images/modules/company/works.png">
+					<span class="down">1</span>
+				</em>
+				<strong>Food Factory</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+																<img alt="" src="/images/modules/_icons/gold.png" class="goldie">
+																10							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+		<li industry="2" style="display: none;" class="factories ">
+			<span></span>
+						<a title="" href="javascript:;">
+				<img width="103" height="57" alt="" class="building" src="/images/buildings/2.png">
+				<em class="duo">
+					<img title="Basic Productivity" alt="" src="/images/icons/industry/2/q1_30x30.png">
+					<span>10</span>
+					<img alt="" title="" class="down" src="/images/modules/company/works.png">
+					<span class="down">1</span>
+				</em>
+				<strong>Weapons Factory</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+																<img alt="" src="/images/modules/_icons/gold.png" class="goldie">
+																10							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+				<li industry="1" style="display: none;" class="storage ">
+			<span></span>
+			<a title="" href="javascript:;">
+								<img width="103" height="57" alt="" class="building" src="/images/buildings/1000.png">
+				<em>
+					<img alt="" src="/images/modules/myland/storage_box.png">
+					<span>1000</span>
+				</em>
+				<strong>Normal Storage</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+									<img alt="" src="/images/flags_png/S/Spain.png" class="goldie">
+								1750							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+		<li industry="2" style="display: none;" class="storage ">
+			<span></span>
+			<a title="" href="javascript:;">
+								<img width="103" height="57" alt="" class="building" src="/images/buildings/9000.png">
+				<em>
+					<img alt="" src="/images/modules/myland/storage_box.png">
+					<span>9000</span>
+				</em>
+				<strong>Large Storage</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+								<img alt="" src="/images/modules/_icons/gold.png" class="goldie">
+								35							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+								<li industry="0" style="display: none;" class="train disabled ">
+			<span></span>
+			<div class="train_cost">
+								Free train							</div>
+			<a title="" href="javascript:;">
+									<img width="103" height="57" alt="" class="building" src="/images/buildings/000.png">
+								<em>
+					<img alt="" src="/images/modules/myland/small_strength.png">
+					<span>5</span>
+				</em>
+				<strong title="Weights Room">Weights Room</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+								Owned							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+						<li industry="1" style="display: none;" class="train disabled ">
+			<span></span>
+			<div class="train_cost">
+								0.19 <img alt="" src="/images/modules/_icons/tiny_gold.png">&nbsp;/ train							</div>
+			<a title="" href="javascript:;">
+									<img width="103" height="57" alt="" class="building" src="/images/buildings/100.png">
+								<em>
+					<img alt="" src="/images/modules/myland/small_strength.png">
+					<span>2.5</span>
+				</em>
+				<strong title="Climbing Center">Climbing Center</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+								Owned							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+						<li industry="2" style="display: none;" class="train disabled ">
+			<span></span>
+			<div class="train_cost">
+								1.49 <img alt="" src="/images/modules/_icons/tiny_gold.png">&nbsp;/ train							</div>
+			<a title="" href="javascript:;">
+									<img width="103" height="57" alt="" class="building" src="/images/buildings/200.png">
+								<em>
+					<img alt="" src="/images/modules/myland/small_strength.png">
+					<span>5</span>
+				</em>
+				<strong title="Shooting Range">Shooting Range</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+								Owned							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+						<li industry="3" style="display: none;" class="train disabled ">
+			<span></span>
+			<div class="train_cost">
+								1.79 <img alt="" src="/images/modules/_icons/tiny_gold.png">&nbsp;/ train							</div>
+			<a title="" href="javascript:;">
+									<img width="103" height="57" alt="" class="building" src="/images/buildings/300.png">
+								<em>
+					<img alt="" src="/images/modules/myland/small_strength.png">
+					<span>10</span>
+				</em>
+				<strong title="Special Forces Center">Special Forces …</strong>
+				<table width="100%">
+					<tbody><tr>
+						<td>
+							<small>
+								Owned							</small>
+						</td>
+					</tr>
+				</tbody></table>
+			</a>
+		</li>
+			</ul>
+</div>
+<table style="display:none;" id="money_error" class="error_message">
+	<tbody><tr>
+		<td>You don't have enough %%1%% to build this %%2%%.</td>
+	</tr>
+</tbody></table><form id="companyCreateForm" name="companyCreateForm" method="post" action="/en/company/create">
+	<input type="hidden" id="company_industry_id" name="company[industry_id]"><input type="hidden" id="company_building_type" name="company[building_type]"><input type="hidden" id="company__csrf_token" value="d05904f6675e1e2fd3126e078d387a01" name="company[_csrf_token]">	<table width="100%" style="width:auto; margin:0 auto;clear:both;">
+		<tbody><tr>
+			<td>
+				<a id="construct" style="display: none;" class="fluid_blue_dark_big" title="Submit" href="javascript:;"><span>Build</span></a>
+			</td>
+		</tr>
+	</tbody></table>
+</form>
+<script type="text/javascript">
+	var prices = {"1":{"value":10,"currency":"gold"},"2":{"value":10,"currency":"gold"},"7":{"value":1500,"currency":"local"},"8":{"value":3000,"currency":"local"},"9":{"value":10,"currency":"gold"},"10":{"value":8500,"currency":"local"},"11":{"value":35,"currency":"gold"},"12":{"value":1500,"currency":"local"},"13":{"value":3000,"currency":"local"},"14":{"value":10,"currency":"gold"},"15":{"value":8500,"currency":"local"},"16":{"value":35,"currency":"gold"},"100":{"currency":"gold","value":10}};
+	var gold = {"amount":13.51,"currency":"GOLD"};
+	var money = {"amount":49.74959,"currency":"ESP"};
+	var money_msg = "You don't have enough %%1%% to build this %%2%%.";
+	var storage_prices = {"small":1750,"large":35};
+	var training_grounds_prices = [0,100,200,300];
+</script>
