@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /erepublik/
+
+RewriteRule ^(.*)\.htm$ index.php?route=$1

@@ -1,0 +1,273 @@
+	<div style="width:520px;min-height:30px;line-height:20px;" class="testDivblue ">
+		<h2><span></span>Company: <%=company.name%></h2>
+		<p style="clear: both"></p>
+	</div>
+	
+	<div id="companyContainer" style="width:620px;" class="testDivblue ">
+		<table style="text-align: middle; vertical-align: middle; width: 620px">
+			<tbody><tr>
+				<td style="width: 130px; vertical-align:top;">
+					<div class="blueLabel" id="unitStatusHead">
+						<a href="company.html?id=0" style="font-weight: bold"><%=company.name%></a>
+					</div>
+					
+						<div class="blueLabel unitStatusOptions">
+							<a href="editCompany.html?id=0">Edit company</a>
+						</div>
+					
+					<div class="blueLabel unitStatusOptions">
+						<a href="companyWorkResults.html?id=0">View worker productivity</a>
+					</div>
+					
+					
+				</td>
+				<td class="biggerFont">
+					<div style="width: 370px; float: left; text-align: left;margin-left:5px;">
+						<table style="width:360px;">
+							<tbody><tr>
+								<td style="width:170px;"><div class="statsLabel smallStatsLabel"><b>Country/region</b></div></td>
+								<td><div class="statsLabelRight smallStatsLabel blueLabel countryLabel"><b><div class="flags-small <%=company.country.name%>"></div>
+ <%=company.country.name%>
+ - <a href="region.html?id=<%=company.region.name%>"><%=company.region.name%></a></b></div></td>
+							</tr>
+							<tr>
+								<td><div class="statsLabel smallStatsLabel"><b>Production progress</b></div></td> 
+								<td><div class="statsLabelRight smallStatsLabel blueLabel"><b>75.0 %</b></div></td>
+							</tr>
+							<tr>
+								<td><div class="statsLabel smallStatsLabel"><b>Employees who worked today</b></div></td> 
+								<td><div class="statsLabelRight smallStatsLabel blueLabel"><b>0</b></div></td>
+							</tr>
+							<tr>
+								<td><div class="statsLabel smallStatsLabel"><b>Total employees</b></div></td> 
+								<td><div class="statsLabelRight smallStatsLabel blueLabel"><b>0</b></div></td>
+							</tr>
+							
+								<tr>
+                                                                    <td><div class="statsLabel smallStatsLabel"><b>Resource</b></div></td> 
+                                                                    <td><div class="productLabelRight"><div class="product">
+<div>
+<img src="images/productIcons/Grain.png" title="">
+</div>
+</div>
+</div></td>
+								</tr>
+							 
+							<tr>
+                                                                <td><div class="statsLabel smallStatsLabel"><b>Product</b></div></td> 
+                                                                <td><div class="productLabelRight"><div class="product">
+<div>
+<img src="images/productIcons/Food.png" title="">
+<img src="images/productIcons/q1.png" title="">
+</div>
+</div>
+</div></td>
+							</tr>
+							<tr>
+								<td><div class="statsLabel smallStatsLabel"><b>Raw per one product</b></div></td> 
+								<td><div class="statsLabelRight smallStatsLabel blueLabel"><b>
+									
+										1
+									
+									
+								</b></div></td>
+							</tr>
+						</tbody></table>
+					</div>
+					<div class="blueLabel" id="militaryLeader">
+						<a href="profile.html?id=<%=company.owner.id%>"><%=company.owner.nick%></a>
+						<div class="flags-small Spain"></div>  <br>   
+						<img style="width:40px; height:40px; border:1px solid #888;" src="images/blank-avatar.png">    <br> 
+						<b style="color: #111">Employer</b>  
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+	<p style="clear: both"></p> </div>
+	<br>
+	
+	
+		<div style="width:620px;" class="testDivblue ">
+			<div style="width:600px;" class="testDivwhite ">
+				<b>Create job</b>
+				
+
+
+
+<form id="createJobForm" class="validatedForm" action="company.html?id=" method="POST" novalidate="novalidate">
+	<input type="hidden" name="action" value="postJobOffer">
+	<table>
+		<tbody><tr>
+			<td style="width:195px !important;"><b>Minimal economic skill:</b>
+				<select id="minimalSkill" name="minimalSkill" data-cip-id="cIPJQ342845640">
+					
+						<option value="1" selected="selected">1</option>
+					
+						<option value="2">2</option>
+					
+						<option value="3">3</option>
+					
+						<option value="4">4</option>
+					
+						<option value="5">5</option>
+					
+						<option value="6">6</option>
+					
+						<option value="7">7</option>
+					
+						<option value="8">8</option>
+					
+						<option value="9">9</option>
+					
+						<option value="10">10</option>
+					
+						<option value="11">11</option>
+					
+						<option value="12">12</option>
+					
+						<option value="13">13</option>
+					
+						<option value="14">14</option>
+					
+						<option value="15">15</option>
+					
+						<option value="16">16</option>
+					
+						<option value="17">17</option>
+					
+						<option value="18">18</option>
+					
+						<option value="19">19</option>
+					
+						<option value="20">20</option>
+					
+				</select>
+			</td>
+			<td style="width:160px;"><b>Salary in <div class="flags-small USA"></div>  USD : </b></td>
+                        <td><input id="price" name="price" class="number" style="width: 30px" min="1.0" required="required" type="text" value="1.0" data-cip-id="price"></td>
+			<td style="width:110px;"><b>Quantity <input id="quantity" name="quantity" class="digit" style="width: 30px" min="1" required="required" type="text" value="1" data-cip-id="quantity"></b></td>
+			<td style="width:120px;"><input type="submit" value="Create job offer"></td>
+		</tr>
+	</tbody></table>
+</form>
+
+			<p style="clear: both"></p> </div>
+			<br>
+			
+				<div style="width:600px;" class="testDivwhite ">
+					<b>Upgrading</b>
+					
+				
+						<table>
+							<tbody><tr>
+								<td style="width:400px;text-align:right;"><b>Upgrading company costs <div class="flags-small Gold"></div> <b>20.00</b> Gold</b></td>
+								<td style="width:200px;">
+									<form id="command" action="company.html" method="POST">
+										<input type="hidden" name="action" value="upgrade">
+										<input type="hidden" name="id" value="0">
+										<input style="width:150px;" type="submit" id="upgradeCompanybutton" value="Upgrade company" prompttext="Are you sure to upgrade this company?">
+									</form>
+								</td>
+							</tr>
+						</tbody></table>
+											
+						
+				<p style="clear: both"></p> </div>
+			
+			<br>
+			
+				<div style="width:600px;" class="testDivwhite ">
+					<b>Sell company</b>
+					<table>
+						<tbody><tr>
+							
+							
+								<td style="width:400px;text-align:right;"><b>Price in gold: <div class="flags-small Gold"></div> </b></td>
+								<td style="width:200px;">
+									<form id="command" class="validatedForm2" action="company.html?id=0" method="POST" novalidate="novalidate">
+										<input type="hidden" name="action" value="sellCompany">
+										<input style="width:36px;" class="number" type="text" name="priceInGold" value="19.0" required="required" data-cip-id="cIPJQ342845639"> 
+										<input style="width:100px;" type="submit" value="Post sell offer">
+									</form>
+								</td>
+							
+						</tr>
+					</tbody></table>
+				<p style="clear: both"></p> </div>
+			
+		<p style="clear: both"></p> </div>
+	
+	<br>
+	<div style="width:310px;text-align:center;font-size:11px;float:left;margin-left:30px;" class="testDivblue companyOffers">
+		<b>Job offers:
+			
+				No job offers
+				
+				<table class="dataTable " style="margin: auto;width: 310px;">
+				<tbody><tr class="tableHeader">
+					<td style="width: 50px">Min. skill</td>
+					<td style="width: 40px; font-size:13px">Offers</td>
+					<td style="width: 120px;">Salary</td>
+					
+						<td style="width: 50px">Delete</td>
+					
+					
+				</tr>	
+				
+					<tr class="tableRow">
+						<td>1</td>
+						<td>1</td>
+						<td> 
+							<div>
+								<div class="flags-small USA"></div> <b>1.00</b> USD 
+								
+									<a href="#" class="hiddenForm">edit</a>
+								
+							</div>
+							
+								<div style="display: none">
+									<form action="company.html" method="POST">
+										<input type="hidden" name="offerId" value="0">
+										<input type="hidden" name="action" value="editJobOffer">
+										<input type="hidden" name="id" value="0">
+										<input style="width: 25px; margin-left: 8px;" type="text" name="salary" value="1.0" required="required">
+										<input style="width: 40px" type="submit" value="edit">
+									</form>
+								</div>
+								<a href="jobMarket.html?countryId=26&amp;minimalSkill=1">View on market</a>
+							
+						</td>
+						<td>
+							
+								<form action="jobMarket.html" method="POST">
+									<input type="hidden" name="id" value="0">
+									<input type="submit" value="Apply">
+								</form>
+							
+							
+								<form action="company.html" method="POST">
+									<input type="hidden" name="action" value="deleteJobOffer">
+									<input type="hidden" name="id" value="0">
+									<input type="hidden" name="offerId" value="0">
+									<input type="submit" value="Delete">
+								</form>
+							
+						</td>
+					</tr>
+				
+			</tbody></table>
+			
+		</b>
+			
+	<p style="clear: both"></p> </div>
+	
+	<div style="width:330px;text-align:center;font-size:11px;float:right;margin-right:30px;" class="testDivblue companyOffers">
+	
+		<b>Workers:	
+		
+			No workers
+			<br>
+		
+		</b>	
+		
+	<p style="clear: both"></p> </div>
