@@ -1,2 +1,0 @@
-{"ts":1357326849732,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"erepublik\n=========\n\neRepublik clone"]],"start1":0,"start2":0,"length1":0,"length2":36}]],"length":36}
-{"contributors":[],"silentsave":false,"ts":1357326950891,"patch":[[{"diffs":[[0,"ik clone"],[1,"\n\nmySQL:\n* For selects  $db_slave o $GLOBALS['db_slave']\n* The rest $db or $GLOBALS['db']"]],"start1":28,"start2":28,"length1":8,"length2":97}]],"length":125,"saved":false}
