@@ -1,0 +1,25 @@
+User module [4%]
+===========
+- Login			[100%]
+- Register		[80%]
+- Skills system [100%]
+- Currency system [50%]
+- Train			[100%]
+- Items system	[0%]
+
+Economy module [2%]
+==============
+- Create company [100%]
+- Work			 [100%]
+- Manage company [10%]
+- Market		 [10%]
+- Tax			 [1%]
+
+
+
+War module [0%]
+==========
+
+
+News module [0%]
+===========
