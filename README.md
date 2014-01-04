@@ -1,6 +1,5 @@
 
-
-# Setup #
+# Setup # [![Analytics](https://ga-beacon.appspot.com/UA-17476024-7/erepublik/readme?pixel)](https://github.com/muertet/erepublik)
 
 
 1. Upload all files to your host
