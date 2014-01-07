@@ -3,7 +3,7 @@
 
 
 1. Upload all files to your host
-2. Edit /conf/config.php and /.htaccess fil3. es
+2. Edit /conf/config.php and /.htaccess files
 1. Create in mySQL the selected db in config.php file
 4. Import /sql/erepublik.sql manually and delete /sql/ folder
 5. You're ready:
