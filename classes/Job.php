@@ -229,7 +229,7 @@ class Job extends BasicClass
 	*/
 	public function hasWorked()
 	{
-		$yesterday=strtotime('-1 day');
+		$yesterday=date('Y-m-d',strtotime('-1 day'));
 	
 		$result=$this->db->query("SELECT uid FROM work_historial WHERE uid='".$this->uid."' AND date>'".$yesterday."' ");
 		

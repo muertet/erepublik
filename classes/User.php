@@ -47,7 +47,7 @@ class User extends BasicClass
 	*/
 	public function hasTrained()
 	{
-		$yesterday=strtotime('-1 day');
+		$yesterday=date('Y-m-d',strtotime('-1 day'));
 	
 		$result=$this->db->query("SELECT uid FROM train_historial WHERE uid='".$this->id."' AND date>'".$yesterday."' ");
 		
