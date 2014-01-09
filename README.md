@@ -1,3 +1,6 @@
+# Requirements #
+- PHP >=5.3
+- mySQL
 
 # Setup # [![Analytics](https://ga-beacon.appspot.com/UA-17476024-7/erepublik/readme?pixel)](https://github.com/muertet/erepublik)
 
