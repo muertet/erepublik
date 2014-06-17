@@ -76,6 +76,7 @@ class UserToken extends BasicClass
 		
 		if (sizeof($rows)>0)
 		{
+			unset($dataToSave['id']);
 			$this->db->where('id',$rows[0]['id']);
 			$insertId=$this->db->update($this->table,$dataToSave);
 		}else{
