@@ -47,6 +47,8 @@ News module [0%]
 
 **If you want to see this project finished, FORK -or- consider donating.**
 
+[![Flattr Button](http://api.flattr.com/button/button-static-50x60.png "Flattr This!")](https://flattr.com/thing/3d8925b96592075db3b642eb96229bf7 "OpenSource eRepublik Clone")
+
 
 # API Methods #
 
