@@ -33,10 +33,15 @@ class Autoloader
 		$ClassFile=$ClassFile.'.php';
 		$ClassPath = $path.$ClassFile;
 		//echo $ClassPath."-".var_dump(file_exists($ClassPath))."-".var_dump(class_exists($class))." (".$oClass.") <br>";
-		
-		if (file_exists($ClassPath) && (!class_exists($oClass)) ) {
-			include_once($ClassPath);
-		}
+
+        // boost speed on production env
+        if (Config::get('currentEnv') == 'local') {
+            if (file_exists($ClassPath) && (!class_exists($oClass)) ) {
+                include_once($ClassPath);
+            }
+        } else {
+            include_once($ClassPath);
+        }
 
 	}
 }

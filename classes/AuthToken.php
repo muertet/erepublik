@@ -87,7 +87,7 @@ class AuthToken extends BasicClass
 		$dataToSave=array();
 	
 		$q = "select `id` from `".$this->table."` where `app`='".$this->app."'  LIMIT 1";
-		$rows = $this->db->query($q);
+		$rows = Service::getDB()->query($q);
 		
 		foreach($this->attributes as $attr)
 		{
@@ -97,10 +97,10 @@ class AuthToken extends BasicClass
 		
 		if (sizeof($rows)>0)
 		{
-			$this->db->where('id',$rows[0]['id']);
-			$insertId=$this->db->update($this->table,$dataToSave);
+			Service::getDB()->where('id',$rows[0]['id']);
+			$insertId=Service::getDB()->update($this->table,$dataToSave);
 		}else{
-			$insertId=$this->db->insert($this->table,$dataToSave);
+			$insertId=Service::getDB()->insert($this->table,$dataToSave);
 		}
 		
 		if ($this->id == "")

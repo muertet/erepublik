@@ -1,3 +1,7 @@
+![erepublik](https://github.com/muertet/erepublik/blob/master/images/preview/erepublik1.jpg?raw=true)
+![erepublik2](https://github.com/muertet/erepublik/blob/master/images/preview/erepublik2.jpg?raw=true)
+![erepublik3](https://github.com/muertet/erepublik/blob/master/images/preview/erepublik3.jpg?raw=true)
+
 # Requirements #
 - PHP >=5.3
 - mySQL
@@ -6,9 +10,9 @@
 
 
 1. Upload all files to your host
-2. Edit /conf/config.php and /.htaccess files
+2. Edit /conf/config.php
 1. Create in mySQL the selected db in config.php file
-4. Import /sql/erepublik.sql manually and delete /sql/ folder
+4. Import /conf/erepublik.sql manually
 5. You're ready:
 
 

@@ -56,7 +56,7 @@ class Company extends BasicClass
 			$data['id']='';
 			$data['date']=$this->now();
 			
-			$this->db->insert('company_transaction',$data);
+			Service::getDB()->insert('company_transaction',$data);
 			
 			$this->money-=$data['quantity'];
 			$this->save();
@@ -74,6 +74,7 @@ class Company extends BasicClass
 	*/
 	public function addStock($quantity,$type)
 	{
+        $db = Service::getDB();
 		$where=array(
 			'company'=>$this->id,
 			'product'=>$this->product,
@@ -90,21 +91,21 @@ class Company extends BasicClass
 			
 			$where['quality']=0;
 		}
-		$r=$this->db->query("SELECT quantity FROM company_stock WHERE company='".$this->id."' AND product='".$this->product."' AND productType='".$type."' ".$condition);
+		$r = $db->query("SELECT quantity FROM company_stock WHERE company='".$this->id."' AND product='".$this->product."' AND productType='".$type."' ".$condition);
 		
 		if(sizeof($r)==0){
 			$stock=$quantity;
 			
 			$where['quantity']=$stock;
 			
-			return $this->db->insert('company_stock',$where);
+			return $db>insert('company_stock',$where);
 		}else{
 			$stock=$r[0]['quantity']+$quantity;
 			$data=array('quantity'=>$stock);
+
+            $db->where($where);
 			
-			$this->db->where($where);
-			
-			return $this->db->update('company_stock',$data);
+			return $db->update('company_stock',$data);
 		}
 	}
 	

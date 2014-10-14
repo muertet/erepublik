@@ -2,21 +2,17 @@
 
 class BasicClass
 {
-	public $db=null;
-	private $unsetAttributes=array(
+	public $db = null;
+	private $unsetAttributes = array(
 		'db',
 		'table',
 		'attributes'
 	);
 	
 	public function __construct()
-	{	
-		global $mySQLI;
-		
-		$this->db=$mySQLI;
-		
-		if(!isset($this->table)){
-			$this->table=strtolower(get_class($this));
+	{
+		if (!isset($this->table)) {
+			$this->table = strtolower(get_class($this));
 		}
 
 	}
@@ -24,13 +20,14 @@ class BasicClass
 	/**
 	* Gets object from database
 	* @param integer $id 
+	* @param boolean $rawResult
 	* @return object
 	*/
-	public function get($id,$rawResult=false)
+	public function get($id, $rawResult = false)
 	{
 		$id=(int)$id;
 		$q = "select * from `".$this->table."` where `id`='".$id."' LIMIT 1";
-		$list=$this->db->query($q);
+		$list=Service::getDB()->query($q);
 		
 		if(sizeof($list)==0){
 			return false;
@@ -117,7 +114,7 @@ class BasicClass
 		}
 		$q .= $sqlLimit;
 		
-		$list=$this->db->query($q);
+		$list=Service::getDB()->query($q);
 		
 		foreach($list as $row)
 		{
@@ -158,7 +155,7 @@ class BasicClass
 		
 		if ($this->id!=''){
 			$q = "select `id` from `".$this->table."` where `id`='".$this->id."' LIMIT 1";
-			$rows = $this->db->query($q);
+			$rows = Service::getDB()->query($q);
 		}
 		
 		foreach($this->attributes as $attr)
@@ -169,10 +166,10 @@ class BasicClass
 		
 		if (sizeof($rows)!==0)
 		{
-			$this->db->where('id',$this->id);
-			$insertId=$this->db->update($this->table,$dataToSave);
+			Service::getDB()->where('id',$this->id);
+			$insertId=Service::getDB()->update($this->table,$dataToSave);
 		}else{
-			$insertId=$this->db->insert($this->table,$dataToSave);
+			$insertId=Service::getDB()->insert($this->table,$dataToSave);
 		}
 		
 		if ($this->id == "")
@@ -200,8 +197,8 @@ class BasicClass
 	*/
 	function delete()
 	{
-		$this->db->where('id',$this->id);
-		return $this->db->delete($this->table,1);
+		Service::getDB()->where('id',$this->id);
+		return Service::getDB()->delete($this->table,1);
 	}
 	
 	/**

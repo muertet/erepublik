@@ -1,7 +1,7 @@
 <?php
 $envs = array
 (
-    'local' => '^(localhost|menut-local\.com)$',
+    'local' => '^(localhost|erepublik\.com)$',
     'prod' => '^(mydomain\.com)$',
 );
 
@@ -44,21 +44,21 @@ $config = array
 	*/
     'basedir' => array
     (
-        'local' => '/erepublik/',
+        'local' => '/',
         'prod' => '/erepublik/',
     ),
 	// NO FINAL SLASH!
-	'domain'=>array(
-		'local'=>'localhost/erepublik',
-		'prod'=>'mydomain.com'
+	'domain' => array(
+		'local' => 'erepublik.com',
+		'prod' => 'erepublik.com'
 	),
-	'appId'=>array(
-		'local'=>1,
-		'prod'=>1,
+	'appId' => array(
+		'local' => 1,
+		'prod' => 1,
 	),
-	'secret'=>array(
-		'local'=>'2345r6tujyhtg',
-		'prod'=>'2345r6tujyhtg',
+	'secret' => array(
+		'local' => '2345r6tujyhtg',
+		'prod' => '2345r6tujyhtg',
 	),
 
     'root' => dirname(dirname(__FILE__)),

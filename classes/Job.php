@@ -178,7 +178,7 @@ class Job extends BasicClass
 		if($company->transaction($transactionData))
 		{
 			//save historial
-			$this->db->insert('work_historial',array(
+			Service::getDB()->insert('work_historial',array(
 				'uid'=>$this->uid,
 				'date'=>$this->now(),
 			));
@@ -200,7 +200,7 @@ class Job extends BasicClass
 	{
 		$id=(int)$id;
 		$q = "select * from `".$this->table."` where `uid`='".$id."' LIMIT 1";
-		$list=$this->db->query($q);
+		$list=Service::getDB()->query($q);
 		
 		if(sizeof($list)==0){
 			return false;
@@ -231,7 +231,7 @@ class Job extends BasicClass
 	{
 		$yesterday=date('Y-m-d',strtotime('-1 day'));
 	
-		$result=$this->db->query("SELECT uid FROM work_historial WHERE uid='".$this->uid."' AND date>'".$yesterday."' ");
+		$result=Service::getDB()->query("SELECT uid FROM work_historial WHERE uid='".$this->uid."' AND date>'".$yesterday."' ");
 		
 		if(sizeof($result)>0){
 			return true;
@@ -252,7 +252,7 @@ class Job extends BasicClass
 		$dataToSave=array();
 	
 		$q = "select `id` from `".$this->table."` where `uid`='".$this->uid."'  LIMIT 1";
-		$rows = $this->db->query($q);
+		$rows = Service::getDB()->query($q);
 		
 		foreach($this->attributes as $attr)
 		{
@@ -262,10 +262,10 @@ class Job extends BasicClass
 		
 		if (sizeof($rows)>0)
 		{
-			$this->db->where('uid',$this->uid);
-			$insertId=$this->db->update($this->table,$dataToSave);
+			Service::getDB()->where('uid',$this->uid);
+			$insertId=Service::getDB()->update($this->table,$dataToSave);
 		}else{
-			$insertId=$this->db->insert($this->table,$dataToSave);
+			$insertId=Service::getDB()->insert($this->table,$dataToSave);
 		}
 		
 		if ($this->id == "")

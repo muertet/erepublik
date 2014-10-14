@@ -49,7 +49,7 @@ class User extends BasicClass
 	{
 		$yesterday=date('Y-m-d',strtotime('-1 day'));
 	
-		$result=$this->db->query("SELECT uid FROM train_historial WHERE uid='".$this->id."' AND date>'".$yesterday."' ");
+		$result=Service::getDB()->query("SELECT uid FROM train_historial WHERE uid='".$this->id."' AND date>'".$yesterday."' ");
 		
 		if(sizeof($result)>0){
 			return true;
@@ -75,7 +75,7 @@ class User extends BasicClass
 		Session 200+	1 strength gain per day
 		*/
 		
-		$r=$this->db->query("SELECT uid FROM `train_historial` WHERE uid = '".$this->id."'");
+		$r=Service::getDB()->query("SELECT uid FROM `train_historial` WHERE uid = '".$this->id."'");
 		$trainedDays=sizeof($r);
 		
 		if($trainedDays<5){
@@ -101,7 +101,7 @@ class User extends BasicClass
 		
 		if($skill->save()){
 			
-			$this->db->insert('train_historial',array(
+			Service::getDB()->insert('train_historial',array(
 				'uid'=>$this->id,
 				'date'=>$this->now(),
 			));
@@ -144,13 +144,13 @@ class User extends BasicClass
 			
 			$where['quantity']=$newAmount;
 			
-			return $this->db->insert('user_currency',$where);
+			return Service::getDB()->insert('user_currency',$where);
 		}else{
-			$this->db->where($where);
+			Service::getDB()->where($where);
 			
 			$newAmount=array('quantity'=>$newAmount);
 			
-			return $this->db->update('user_currency',$newAmount);
+			return Service::getDB()->update('user_currency',$newAmount);
 		}
 	}
 	
@@ -162,7 +162,7 @@ class User extends BasicClass
 	*/
 	public function getCurrency($name)
 	{
-		$r=$this->db->query("SELECT quantity FROM user_currency WHERE uid='".$this->id."' AND name='".$name."' ");
+		$r=Service::getDB()->query("SELECT quantity FROM user_currency WHERE uid='".$this->id."' AND name='".$name."' ");
 		
 		if(sizeof($r)==0){
 			return false;
@@ -179,7 +179,7 @@ class User extends BasicClass
 	*/
 	public function updateXP($reason)
 	{
-		$r=$this->db->query("SELECT xp FROM xp_reasons WHERE reason='".$reason."' ");
+		$r=Service::getDB()->query("SELECT xp FROM xp_reasons WHERE reason='".$reason."' ");
 		
 		if(sizeof($r)==0){
 			return false;
@@ -242,7 +242,7 @@ class User extends BasicClass
 		$this->language='en';
 		
 		$q = "select `id` from `".$this->table."` where `email`='".$this->email."' OR `nick`='".$this->nick."' LIMIT 1";
-		$rows = $this->db->query($q);
+		$rows = Service::getDB()->query($q);
 		
 		if(sizeof($rows)>0){
 			return false;

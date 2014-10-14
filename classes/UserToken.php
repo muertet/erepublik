@@ -36,7 +36,7 @@ class UserToken extends BasicClass
 	public function get($token,$rawResult=false)
 	{
 		$q = "select * from `".$this->table."` where `token`='".$token."' LIMIT 1";
-		$list=$this->db->query($q);
+		$list=Service::getDB()->query($q);
 		
 		if(sizeof($list)==0){
 			return false;
@@ -66,7 +66,7 @@ class UserToken extends BasicClass
 		$dataToSave=array();
 	
 		$q = "select `id` from `".$this->table."` where `uid`='".$this->uid."' AND `app`='".$this->app."'  LIMIT 1";
-		$rows = $this->db->query($q);
+		$rows = Service::getDB()->query($q);
 		
 		foreach($this->attributes as $attr)
 		{
@@ -77,10 +77,10 @@ class UserToken extends BasicClass
 		if (sizeof($rows)>0)
 		{
 			unset($dataToSave['id']);
-			$this->db->where('id',$rows[0]['id']);
-			$insertId=$this->db->update($this->table,$dataToSave);
+			Service::getDB()->where('id',$rows[0]['id']);
+			$insertId=Service::getDB()->update($this->table,$dataToSave);
 		}else{
-			$insertId=$this->db->insert($this->table,$dataToSave);
+			$insertId=Service::getDB()->insert($this->table,$dataToSave);
 		}
 		
 		if ($this->id == "")
